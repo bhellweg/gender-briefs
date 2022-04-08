@@ -14,6 +14,7 @@ header-includes:
   \usepackage{booktabs,xcolor}
   \definecolor{myblue}{HTML}{5F7ED9}
   \definecolor{wblight}{HTML}{f8f4fc}
+  \definecolor{wbpurple}{HTML}{c8c4ec}
   \rhead{\includegraphics[width=3.5cm]{gender-logo.png}}
   \lhead{\includegraphics[width=1.25cm]{Flag_of_Colombia.png}\fontsize{22}{1}\selectfont\textbf{ COLOMBIA \textcolor{myblue}{GENDER LANDSCAPE}}}
   \rfoot{Last compiled on `r format(Sys.time(), '%d %B, %Y')`}  
@@ -25,16 +26,18 @@ header-includes:
   \usepackage{float}
   \restylefloat{table}
   \usepackage{multicol}
+  \usepackage{hyperref}
   \newcommand{\hideFromPandoc}[1]{#1}
   \hideFromPandoc{
     \let\Begin\begin
     \let\End\end
   }
   \usepackage{caption}
+  \usepackage[framemethod=tikz]{mdframed}
+  \newmdenv[innerlinewidth=0.5pt, roundcorner=24pt,linecolor=white,backgroundcolor=wbpurple,innerleftmargin=6pt,innerrightmargin=6pt,innertopmargin=6pt,innerbottommargin=6pt,nobreak=True,rightmargin = 7pt]{mybox}
   \captionsetup{skip=0pt} 
-  \setlength{\headsep}{1.1cm}
+  \setlength{\headsep}{1cm}
 ---
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 options(knitr.table.format = "latex")
@@ -60,7 +63,6 @@ load("introtext.RData")
 country_run <- "Colombia"
 
 ```
-
 ```{r legend, include=T, echo = F,warning=F}
 Comparison <- c("Higher Performance", "Equal/No Change", "Lower Performance", "No Data")
 Baseline <- c("","","","")
@@ -71,18 +73,18 @@ kbl(booktabs = T,toprule = "",bottomrule = "") %>%
     column_spec(3,background = spec_color(c(1,2,3,NA), end = 0.8,begin = 0.4, na_color = "lightgray",option = "turbo")) %>%
   column_spec(2,image = spec_image(c("upicon.png","righticon.png","downicon.png","naicon.png"), 30, 30)) %>% 
   row_spec(0,bold = T)
-
 ```
-\fontsize{9}{8}\selectfont
-This brief provides a quick overview of the gender landscape in Colombia on some key indicators. For `r country_run`, the highest performing indicators relative to the baseline year are `r introtext[[1]][1]` and `r introtext[[1]][2]`. The largest declines relative to the baseline year are `r introtext[[1]][15]` and `r introtext[[1]][14]`.
-\normalsize
-\vspace{2pt}
+\begin{minipage}[t][1.8cm][t]{12cm}
+\fontsize{9}{8}\selectfont\raggedright
+This brief provides an overview of the gender landscape in Colombia. For `r country_run`, the highest performing indicators relative to the baseline year are `r introtext[[1]][1]` and `r introtext[[1]][2]`. The largest declines relative to the baseline year are `r introtext[[1]][16]` and `r introtext[[1]][15]`. Click on the links below to explore further in the \href{http://graphicacy-wb-gender-portal.s3-website-us-east-1.amazonaws.com/}{World Bank Gender Portal}.
+\end{minipage}
+\vspace{4pt}
   
 \renewcommand{\arraystretch}{1.15}
 
 ```{r table, include=T, echo = F,warning=F}
 
-footnote <- "Data retrieved from World Bank Gender Data Portal. Country Baseline provides a reference point for the indicator, circa 2010. LAC = Includes the 42 countries (all income levels) in Latin America and the Caribbean, as classified by The World Bank Group. UMC = In FY21, upper- middle-income countries are those with a GNI per capita between $4,046 and $12,535 (calculated using the World Bank Atlas method)."
+footnote <- "Data retrieved from World Bank Gender Data Portal. Country Baseline provides a reference point for the indicator, 2010 or earlier. The region, LAC, includes the 42 countries (all income levels) in Latin America and the Caribbean, as classified by The World Bank Group. The income level, UMC, includes upper-middle-income countries with a GNI per capita between $4,046 and $12,535 (calculated using the World Bank Atlas method). Data definitions can be found on the Gender Data Portal."
 
 wb_table %>% 
   head(.,nrow(.)-9) %>% 
@@ -110,74 +112,248 @@ wb_table %>%
 \newpage
 \clearpage 
 
+\vspace{.15cm}
+
 \fontsize{14}{8}\selectfont
 Gender Equality in Colombia
 \normalsize
-
-\fboxrule.6pt\fboxsep6pt
-\fcolorbox{myblue}{wblight}{\color{black}
-\begin{minipage}[c][2.5cm][t]{3.45cm}
-\raggedright\fontsize{12}{1}\selectfont   
-\textbf{`r callouts[[5]][1]`} 
-\normalsize
-  
-\vspace{.3cm}
-  
-\emph{`r callouts[[4]][1]`}
-\end{minipage}} 
-\fcolorbox{myblue}{wblight}{\color{black}
-\begin{minipage}[c][2.5cm][t]{3.45cm}
-\raggedright\fontsize{12}{1}\selectfont   
-\textbf{`r callouts[[5]][2]`} 
-\normalsize
-  
-\vspace{.3cm}
- 
-\emph{`r callouts[[4]][2]`}
-\end{minipage}} 
-\fcolorbox{myblue}{wblight}{\color{black}
-\begin{minipage}[c][2.5cm][t]{3.45cm}
-\raggedright\fontsize{12}{1}\selectfont   
-\textbf{`r callouts[[5]][3]`} 
-\normalsize
-  
-\vspace{.3cm}
- 
-\emph{`r callouts[[4]][3]`}
-\end{minipage}} 
-\fcolorbox{myblue}{wblight}{\color{black}
-\begin{minipage}[c][2.5cm][t]{3.45cm}
-\raggedright\fontsize{12}{1}\selectfont   
-\textbf{`r callouts[[5]][4]`} 
-\normalsize
-  
-\vspace{.3cm}
- 
-\emph{`r callouts[[4]][4]`}
-\end{minipage}} 
-\fcolorbox{myblue}{wblight}{\color{black}
-\begin{minipage}[c][2.5cm][t]{3.45cm}
-\raggedright\fontsize{12}{1}\selectfont   
-\textbf{`r callouts[[5]][5]`} 
-\normalsize
-  
-\vspace{.3cm}
- 
-\emph{`r callouts[[4]][5]`}
-\end{minipage}}
-\vspace{.2cm}
     
-\fontsize{14}{8}\selectfont
-Gender Equality and the Law
-\normalsize
+\fboxrule.6pt\fboxsep6pt
+\fcolorbox{gray}{wblight}{\color{black}
+\begin{minipage}[c][2.5cm][t]{3.4cm}
+\vspace{.15cm}
+\centering\fontsize{14}{1}\selectfont   
+\textbf{`r callouts[[5]][1]`} 
+\normalsize  
 
-Women, Business and the Law 2021 presents an index covering 190 economies and structured around the life cycle of a working woman. In total, 35 questions are scored across the eight indicators. Colombia scores 81.9 out of 100, higher than the regional average observed across Latin America & Caribbean (80.1).
-```{r genderlaw, include=T, echo = F,warning=F,out.width="100%",fig.align='center',out.extra='trim={0 3.1cm 0 3.1cm},clip'}
+\centering\rule{2cm}{0.5pt}  
+\vspace{.15cm}
+ 
+\raggedright\fontsize{9}{1}\selectfont 
+\emph{`r callouts[[4]][1]`}
+\normalsize\end{minipage}}
+\fcolorbox{gray}{wblight}{\color{black}
+\begin{minipage}[c][2.5cm][t]{3.4cm}
+\vspace{.15cm}
+\centering\fontsize{14}{1}\selectfont   
+\textbf{`r callouts[[5]][2]`} 
+\normalsize  
+
+\centering\rule{2cm}{0.5pt}  
+\vspace{.15cm}
+ 
+\raggedright\fontsize{9}{1}\selectfont 
+\emph{`r callouts[[4]][2]`}
+\normalsize\end{minipage}} 
+\fcolorbox{gray}{wblight}{\color{black}
+\begin{minipage}[c][2.5cm][t]{3.4cm}
+\vspace{.15cm}
+\centering\fontsize{14}{1}\selectfont   
+\textbf{`r callouts[[5]][3]`} 
+\normalsize  
+
+\centering\rule{2cm}{0.5pt}  
+\vspace{.15cm}
+ 
+\raggedright\fontsize{9}{1}\selectfont 
+\emph{`r callouts[[4]][3]`}
+\normalsize\end{minipage}}
+\fcolorbox{gray}{wblight}{\color{black}
+\begin{minipage}[c][2.5cm][t]{3.4cm}
+\vspace{.15cm}
+\centering\fontsize{14}{1}\selectfont   
+\textbf{`r callouts[[5]][4]`} 
+\normalsize  
+
+\centering\rule{2cm}{0.5pt}  
+\vspace{.15cm}
+ 
+\raggedright\fontsize{9}{1}\selectfont 
+\emph{`r callouts[[4]][4]`}
+\normalsize\end{minipage}}
+\fcolorbox{gray}{wblight}{\color{black}
+\begin{minipage}[c][2.5cm][t]{3.4cm}
+\vspace{.15cm}
+\centering\fontsize{14}{1}\selectfont   
+\textbf{`r callouts[[5]][5]`} 
+\normalsize  
+
+\centering\rule{2cm}{0.5pt}  
+\vspace{.15cm}
+ 
+\raggedright\fontsize{9}{1}\selectfont 
+\emph{`r callouts[[4]][5]`}
+\normalsize\end{minipage}}
+
+\vspace{.1cm}
+
+\centering\rule{19.5cm}{0.5pt}
+
+\raggedright
+\vspace{.1cm}
+\fcolorbox{white}{white}{\color{black}
+\begin{minipage}[c][1.5cm][t]{8cm}
+\fontsize{14}{1}\selectfont   
+Gender Equality in the Law
+\normalsize
+\end{minipage}}
+\fcolorbox{white}{white}{\color{black}
+\begin{minipage}[c][1.5cm][t]{10cm}
+\fontsize{9}{1}\selectfont   
+\raggedright\textbf{\href{http://graphicacy-wb-gender-portal.s3-website-us-east-1.amazonaws.com/indicators/sg-law-indx}{Women, Business and the Law 2021}} presents an index covering 190 economies and structured around the life cycle of a working woman. In total, 35 questions are scored across the eight indicators. \textbf{Colombia scores `r wb_table[[6]][33]` out of 100,} while the regional average across Latin America and Caribbean is 80.1.
+\normalsize
+\end{minipage}}
+```{r genderlaw1, include=F, echo = F,warning=F,out.width="100%",fig.align='center',out.extra='trim={0 3.1cm 0 3.1cm},clip'}
 plot_grid(map_region,NULL,lawchart,rel_widths = c(12,3,17),align = "h",nrow = 1,ncol = 3)
 ```
+\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\vspace{.3cm}
+\includegraphics[height=.75cm]{overall.png}
 
-***
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Overall}\normalsize 
 
+\vspace{20pt}
+\fontsize{14}{1}\selectfont 
+\emph{`r wb_table[[6]][33]`}
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\vspace{.3cm}
+\includegraphics[height=.75cm]{mobility.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Mobility}\normalsize 
+
+\vspace{20pt}
+\fontsize{14}{1}\selectfont 
+\emph{`r wb_table[[6]][36]`}
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\vspace{.3cm}
+\includegraphics[height=.75cm]{workplace.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Workplace}\normalsize 
+
+\vspace{20pt}
+\fontsize{14}{1}\selectfont 
+\emph{`r wb_table[[6]][41]`}
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\vspace{.3cm}
+\includegraphics[height=.75cm]{pay.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Pay}\normalsize 
+
+\vspace{20pt}
+\fontsize{14}{1}\selectfont 
+\emph{`r wb_table[[6]][40]`}
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\vspace{.3cm}
+\includegraphics[height=.75cm]{marriage.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Marriage}\normalsize 
+
+\vspace{20pt}
+\fontsize{14}{1}\selectfont 
+\emph{`r wb_table[[6]][37]`}
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\vspace{.3cm}
+\includegraphics[height=.75cm]{parenthood.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Parent-
+hood}\normalsize 
+
+\vspace{12pt}
+\fontsize{14}{1}\selectfont 
+\emph{`r wb_table[[6]][39]`}
+
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+
+\vspace{.3cm}
+\includegraphics[height=.75cm]{entrepreneur.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Entrepre-
+neurship}\normalsize 
+
+\vspace{12pt}
+\fontsize{14}{1}\selectfont 
+
+\emph{`r wb_table[[6]][35]`}
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\vspace{.3cm}
+\includegraphics[height=.75cm]{assets.png}
+
+\vspace{.45cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Assets}
+  
+\normalsize 
+\vspace{20pt}
+\fontsize{14}{1}\selectfont 
+\emph{`r wb_table[[6]][34]`}
+
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+
+\vspace{.3cm}
+\includegraphics[height=.75cm]{pension.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Pension}\normalsize 
+
+\vspace{20pt}
+\fontsize{14}{1}\selectfont 
+\emph{`r wb_table[[6]][38]`}
+
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+  
+\fcolorbox{white}{white}{\color{white}
+\begin{minipage}[c][1.5cm][t]{8cm}
+.
+\end{minipage}}
+\fcolorbox{white}{white}{\color{black}
+\begin{minipage}[c][1.5cm][t]{10.5cm}
+\fontsize{8}{1}\selectfont   
+\emph{Why do laws matter for gender equality?}
+\begin{itemize}
+  \item\href{https://www.aeaweb.org/articles?id=10.1257/aeri.20190542}{Gendered Laws and Women in the Workforce}
+  \item\href{https://sdgs.un.org/goals/goal5}{SDG Atlas 2020 Chapter 5: Legal progress towards gender equality}
+\end{itemize}
+\normalsize
+\end{minipage}}
+
+\vspace{.1cm}
+
+\centering\rule{19.5cm}{0.5pt}
+
+\raggedright
+\vspace{.2cm}
 \fontsize{14}{8}\selectfont
 Curated resources to address gender gaps
 \normalsize
@@ -190,8 +366,8 @@ resources %>%
   kbl(booktabs = T, longtable = F) %>% 
   kable_styling(font_size = 8,full_width = F,
                 position = "float_left") %>% 
-  column_spec(1,link = globallinks,width = '9cm') %>% 
-  column_spec(2,link = regionallinks,width = '9cm') %>%
+  column_spec(1,link = globallinks,width = '9.25cm') %>% 
+  column_spec(2,link = regionallinks,width = '9.25cm') %>%
   row_spec(row = 0,font_size = 10,bold = T) %>% 
   pack_rows("Human Endowments",1,3,indent = F,latex_align = "c")%>% 
   pack_rows("Economic Opportunity",4,7,indent = F,latex_align = "c") %>% 

@@ -80,7 +80,7 @@ m9 <- c(  "HD.HCI.HLOS.FE",'up', 'number', 'average harmonized test score for wo
 m10 <- c(  "HD.HCI.HLOS.MA",'up', 'number', 'average harmonized test score for men')
 m11 <- c(  "SE.TER.ENRR.FE",'up', 'percent', 'women enroll in tertiary school')
 m12 <- c(  "SE.TER.ENRR.MA",'up', 'percent', 'men enroll in tertiary school')
-m13 <- c(  "SE.TER.GRAD.FE.SI.ZS",'up', 'percent', 'of STEM graduates are women')
+m13 <- c(  "SE.TER.GRAD.FE.SI.ZS",'up', 'percent', 'STEM graduates are women')
 m14 <- c(  "SP.DYN.TFRT.IN",'down', 'number', 'fertility rate for women')
 m15 <- c(  "SH.STA.MMRT",'down', 'number', 'maternal mortality per 100,000 births')
 m16 <- c(  "SH.HIV.1524.FE.ZS",'down', 'percent', 'women are diagnosed with HIV')
@@ -380,11 +380,14 @@ wbdata_long <- wb_data1 %>%
   wb_table$Measure <- gsub("\\(scale 1-100)","",as.character(wb_table$Measure))
   wb_table$Measure <- gsub(", Male|, male \\(% gross\\)|, males \\(% of male adults\\)|, male \\(% of male population ages 15\\+\\) |, male \\(% of male employment\\) |, male \\(% of male youth population\\)|, male \\(% of 24 hour day\\)|, male \\(% of population ages 15\\+\\)|, male \\(% age 15\\+\\)","",as.character(wb_table$Measure))
   wb_table$Measure <- gsub(", Female|, female \\(% gross\\)|, females \\(% of female adults\\)|, female \\(% of female population ages 15\\+\\) |, female \\(% of female employment\\) |, female \\(% of female youth population\\)|, female \\(% of 24 hour day\\)|, female \\(% of population ages 15\\+\\)|, female \\(% age 15\\+\\)","",as.character(wb_table$Measure))
-#  wb_table$Measure <- gsub(", Female|, female|, adult female","",as.character(wb_table$Measure))
-#  wb_table$Measure <- gsub("^\\(% of males ages 15 and above\\)|^\\(% of relevant age group\\)|^\\(% gross\\)|^\\(% ages 15-24\\)|^ \\(% of male adults\\)|^\\(% of male population ages 15\\+\\)|^\\(% of male employment\\)|^\\(% of male youth population\\)|^\\(% of 24 hour day\\)|^\\(% of population ages 15+\\)|^\\(% age 15+\\)|^\\(% of population ages 15\\+\\)|^\\(% age 15\\+\\)","",as.character(wb_table$Measure))
-    save(wb_table, file = "wbtable.RData")}
+  save(wb_table, file = "wbtable.RData")}
 
 #introtext
+firstlow <- function(x) {
+  substr(x, 1, 1) <- tolower(substr(x, 1, 1))
+  x
+}
+
 {introtext <- wb_table %>% 
   filter(Gender != "Male") %>% 
   select(-c(1,3,5,7:18)) %>% 
@@ -392,12 +395,14 @@ wbdata_long <- wb_data1 %>%
   head(.,nrow(.)-8) %>% 
   na.omit() %>% 
   arrange(., by_group = desc(BestWorst)) 
+  introtext$Measure<-firstlow(introtext$Measure)
+  introtext$Measure <- gsub(" \\(.*","",as.character(introtext$Measure))
 save(introtext, file = "introtext.RData")}
 
 ## Gender Equality Data
 
 {callouts <- wb_table %>% 
-  slice(.,c(26,24,27,29,28,30)) %>% 
+  slice(.,c(7,1,12,24,29)) %>% 
   select(-c(1,3:5,7:16)) %>% 
   mutate(Rating = mapply(x = Rating,y = type,FUN = function(x,y){if(y=="percent"){
     scales::percent(x/100,accuracy = 5)}else
@@ -405,6 +410,8 @@ save(introtext, file = "introtext.RData")}
 callouts <- callouts %>% 
   mutate(Ratio = sapply(.$Rating,FUN = wb_simple))
 save(callouts, file = "callouts.RData")}
+
+  
 ## Map
 
 map_performance <- function(country.fn){
@@ -418,7 +425,7 @@ map_performance <- function(country.fn){
     round(.,digits = 1)
 }
 
-# Pick Conntries
+# Pick Countries
 neighbors <- c(
   'Argentina',
   'Bolivia',

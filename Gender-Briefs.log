@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.5)  7 APR 2022 20:11
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.5)  8 APR 2022 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -499,50 +499,337 @@ Package caption Info: Standard document class detected.
 \c@continuedfloat=\count320
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count321
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2022-04-07 v2.34 Module abspage for zref (HO)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2022-04-07 v2.34 Module base for zref (HO)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count322
+Package zref Info: New property: abspage on input line 65.
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip64
+\c@mdf@globalstyle@cnt=\count323
+\mdf@skipabove@length=\skip65
+\mdf@skipbelow@length=\skip66
+\mdf@leftmargin@length=\skip67
+\mdf@rightmargin@length=\skip68
+\mdf@innerleftmargin@length=\skip69
+\mdf@innerrightmargin@length=\skip70
+\mdf@innertopmargin@length=\skip71
+\mdf@innerbottommargin@length=\skip72
+\mdf@splittopskip@length=\skip73
+\mdf@splitbottomskip@length=\skip74
+\mdf@outermargin@length=\skip75
+\mdf@innermargin@length=\skip76
+\mdf@linewidth@length=\skip77
+\mdf@innerlinewidth@length=\skip78
+\mdf@middlelinewidth@length=\skip79
+\mdf@outerlinewidth@length=\skip80
+\mdf@roundcorner@length=\skip81
+\mdf@footenotedistance@length=\skip82
+\mdf@userdefinedwidth@length=\skip83
+\mdf@needspace@length=\skip84
+\mdf@frametitleaboveskip@length=\skip85
+\mdf@frametitlebelowskip@length=\skip86
+\mdf@frametitlerulewidth@length=\skip87
+\mdf@frametitleleftmargin@length=\skip88
+\mdf@frametitlerightmargin@length=\skip89
+\mdf@shadowsize@length=\skip90
+\mdf@extratopheight@length=\skip91
+\mdf@subtitleabovelinewidth@length=\skip92
+\mdf@subtitlebelowlinewidth@length=\skip93
+\mdf@subtitleaboveskip@length=\skip94
+\mdf@subtitlebelowskip@length=\skip95
+\mdf@subtitleinneraboveskip@length=\skip96
+\mdf@subtitleinnerbelowskip@length=\skip97
+\mdf@subsubtitleabovelinewidth@length=\skip98
+\mdf@subsubtitlebelowlinewidth@length=\skip99
+\mdf@subsubtitleaboveskip@length=\skip100
+\mdf@subsubtitlebelowskip@length=\skip101
+\mdf@subsubtitleinneraboveskip@length=\skip102
+\mdf@subsubtitleinnerbelowskip@length=\skip103
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen195
+\pgfutil@tempdimb=\dimen196
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box102
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen197
+\pgf@y=\dimen198
+\pgf@xa=\dimen199
+\pgf@ya=\dimen256
+\pgf@xb=\dimen257
+\pgf@yb=\dimen258
+\pgf@xc=\dimen259
+\pgf@yc=\dimen260
+\pgf@xd=\dimen261
+\pgf@yd=\dimen262
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count324
+\c@pgf@countb=\count325
+\c@pgf@countc=\count326
+\c@pgf@countd=\count327
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count328
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-xetex.def
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)
+\pgfsys@objnum=\count329
+))) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count330
+\pgfsyssoftpath@bigbuffer@items=\count331
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen263
+\pgfmath@count=\count332
+\pgfmath@box=\box103
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count333
+)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen264
+\pgf@picmaxx=\dimen265
+\pgf@picminy=\dimen266
+\pgf@picmaxy=\dimen267
+\pgf@pathminx=\dimen268
+\pgf@pathmaxx=\dimen269
+\pgf@pathminy=\dimen270
+\pgf@pathmaxy=\dimen271
+\pgf@xx=\dimen272
+\pgf@xy=\dimen273
+\pgf@yx=\dimen274
+\pgf@yy=\dimen275
+\pgf@zx=\dimen276
+\pgf@zy=\dimen277
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen278
+\pgf@path@lasty=\dimen279
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen280
+\pgf@shorten@start@additional=\dimen281
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box104
+\pgf@hbox=\box105
+\pgf@layerbox@main=\box106
+\pgf@picture@serial@count=\count334
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen282
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen283
+\pgf@pt@y=\dimen284
+\pgf@pt@temp=\dimen285
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen286
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen287
+\pgf@sys@shading@range@num=\count335
+\pgf@shadingcount=\count336
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box107
+)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box108
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen288
+\pgf@nodesepend=\dimen289
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen290
+\pgffor@skip=\dimen291
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
+)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count337
+\pgfplotmarksize=\dimen292
+)
+\tikz@lastx=\dimen293
+\tikz@lasty=\dimen294
+\tikz@lastxsaved=\dimen295
+\tikz@lastysaved=\dimen296
+\tikz@lastmovetox=\dimen297
+\tikz@lastmovetoy=\dimen298
+\tikzleveldistance=\dimen299
+\tikzsiblingdistance=\dimen300
+\tikz@figbox=\box109
+\tikz@figbox@bg=\box110
+\tikz@tempbox=\box111
+\tikz@tempbox@bg=\box112
+\tikztreelevel=\count338
+\tikznumberofchildren=\count339
+\tikznumberofcurrentchild=\count340
+\tikz@fig@count=\count341
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count342
+\pgfmatrixcurrentcolumn=\count343
+\pgf@matrix@numberofcolumns=\count344
+)
+\tikz@expandcount=\count345
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
+File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
+)
+\mdf@frametitlebox=\box113
+\mdf@footnotebox=\box114
+\mdf@splitbox@one=\box115
+\mdf@splitbox@two=\box116
+\mdf@splitbox@save=\box117
+\mdfsplitboxwidth=\skip104
+\mdfsplitboxtotalwidth=\skip105
+\mdfsplitboxheight=\skip106
+\mdfsplitboxdepth=\skip107
+\mdfsplitboxtotalheight=\skip108
+\mdfframetitleboxwidth=\skip109
+\mdfframetitleboxtotalwidth=\skip110
+\mdfframetitleboxheight=\skip111
+\mdfframetitleboxdepth=\skip112
+\mdfframetitleboxtotalheight=\skip113
+\mdffootnoteboxwidth=\skip114
+\mdffootnoteboxtotalwidth=\skip115
+\mdffootnoteboxheight=\skip116
+\mdffootnoteboxdepth=\skip117
+\mdffootnoteboxtotalheight=\skip118
+\mdftotallinewidth=\skip119
+\mdfboundingboxwidth=\skip120
+\mdfboundingboxtotalwidth=\skip121
+\mdfboundingboxheight=\skip122
+\mdfboundingboxdepth=\skip123
+\mdfboundingboxtotalheight=\skip124
+\mdf@freevspace@length=\skip125
+\mdf@horizontalwidthofbox@length=\skip126
+\mdf@verticalmarginwhole@length=\skip127
+\mdf@horizontalspaceofbox=\skip128
+\mdfsubtitleheight=\skip129
+\mdfsubsubtitleheight=\skip130
+\c@mdfcountframes=\count346
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count347
+\c@mdf@env@i=\count348
+\c@mdf@env@ii=\count349
+\c@mdf@zref@counter=\count350
+Package zref Info: New property: mdf@pagevalue on input line 895.
 ) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
-\LTleft=\skip64
-\LTright=\skip65
-\LTpre=\skip66
-\LTpost=\skip67
-\LTchunksize=\count321
-\LTcapwidth=\dimen195
-\LT@head=\box102
-\LT@firsthead=\box103
-\LT@foot=\box104
-\LT@lastfoot=\box105
-\LT@gbox=\box106
-\LT@cols=\count322
-\LT@rows=\count323
-\c@LT@tables=\count324
-\c@LT@chunks=\count325
-\LT@p@ftn=\toks29
+\LTleft=\skip131
+\LTright=\skip132
+\LTpre=\skip133
+\LTpost=\skip134
+\LTchunksize=\count351
+\LTcapwidth=\dimen301
+\LT@head=\box118
+\LT@firsthead=\box119
+\LT@foot=\box120
+\LT@lastfoot=\box121
+\LT@gbox=\box122
+\LT@cols=\count352
+\LT@rows=\count353
+\c@LT@tables=\count354
+\c@LT@chunks=\count355
+\LT@p@ftn=\toks41
 ) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen196
-\ar@mcellbox=\box107
-\extrarowheight=\dimen197
-\NC@list=\toks30
-\extratabsurround=\skip68
-\backup@length=\skip69
-\ar@cellbox=\box108
+\col@sep=\dimen302
+\ar@mcellbox=\box123
+\extrarowheight=\dimen303
+\NC@list=\toks42
+\extratabsurround=\skip135
+\backup@length=\skip136
+\ar@cellbox=\box124
 ) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip70
-\multirow@cntb=\count326
-\multirow@dima=\skip71
-\bigstrutjot=\dimen198
+\multirow@colwidth=\skip137
+\multirow@cntb=\count356
+\multirow@dima=\skip138
+\bigstrutjot=\dimen304
 ) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen199
-\WF@size=\dimen256
-\c@WF@wrappedlines=\count327
-\WF@box=\box109
-\WF@everypar=\toks31
+\wrapoverhang=\dimen305
+\WF@size=\dimen306
+\c@WF@wrappedlines=\count357
+\WF@box=\box125
+\WF@everypar=\toks43
 Package: wrapfig 2003/01/31  v 3.6
 ) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
-\everycr=\toks32
-\minrowclearance=\skip72
+\everycr=\toks44
+\minrowclearance=\skip139
 ) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
@@ -553,36 +840,36 @@ Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box110
-\sift@deathcycles=\count328
-\@vwid@loff=\dimen257
-\@vwid@roff=\dimen258
+\@vwid@box=\box126
+\sift@deathcycles=\count358
+\@vwid@loff=\dimen307
+\@vwid@roff=\dimen308
 )
-\c@taburow=\count329
-\tabu@nbcols=\count330
-\tabu@cnt=\count331
-\tabu@Xcol=\count332
-\tabu@alloc=\count333
-\tabu@nested=\count334
-\tabu@target=\dimen259
-\tabu@spreadtarget=\dimen260
-\tabu@naturalX=\dimen261
-\tabucolX=\dimen262
-\tabu@Xsum=\dimen263
-\extrarowdepth=\dimen264
-\abovetabulinesep=\dimen265
-\belowtabulinesep=\dimen266
-\tabustrutrule=\dimen267
-\tabu@thebody=\toks33
-\tabu@footnotes=\toks34
-\tabu@box=\box111
-\tabu@arstrutbox=\box112
-\tabu@hleads=\box113
-\tabu@vleads=\box114
-\tabu@cellskip=\skip73
+\c@taburow=\count359
+\tabu@nbcols=\count360
+\tabu@cnt=\count361
+\tabu@Xcol=\count362
+\tabu@alloc=\count363
+\tabu@nested=\count364
+\tabu@target=\dimen309
+\tabu@spreadtarget=\dimen310
+\tabu@naturalX=\dimen311
+\tabucolX=\dimen312
+\tabu@Xsum=\dimen313
+\extrarowdepth=\dimen314
+\abovetabulinesep=\dimen315
+\belowtabulinesep=\dimen316
+\tabustrutrule=\dimen317
+\tabu@thebody=\toks45
+\tabu@footnotes=\toks46
+\tabu@box=\box127
+\tabu@arstrutbox=\box128
+\tabu@hleads=\box129
+\tabu@vleads=\box130
+\tabu@cellskip=\skip140
 ) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box115
+\@tempboxb=\box131
 ) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/threeparttablex.sty
 Package: threeparttablex 2013/07/23 v0.3 by daleif
 (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
@@ -590,23 +877,23 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip74
+\TPTL@width=\skip141
 ) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box116
-\UL@hyphenbox=\box117
-\UL@skip=\skip75
-\UL@hook=\toks35
-\UL@height=\dimen268
-\UL@pe=\count335
-\UL@pixel=\dimen269
-\ULC@box=\box118
+\UL@box=\box132
+\UL@hyphenbox=\box133
+\UL@skip=\skip142
+\UL@hook=\toks47
+\UL@height=\dimen318
+\UL@pe=\count365
+\UL@pixel=\dimen319
+\ULC@box=\box134
 Package: ulem 2019/11/18
-\ULdepth=\dimen270
+\ULdepth=\dimen320
 ) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen271
-\c@nlinenum=\count336
-\TeXr@lab=\toks36
+\rotheadsize=\dimen321
+\c@nlinenum=\count366
+\TeXr@lab=\toks48
 )
 LaTeX Font Info:    Trying to load font information for T1+Montserrat-TLF on input line 79.
 (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/montserrat/T1Montserrat-TLF.fd
@@ -747,14 +1034,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count337
+\c@section@level=\count367
 )
 LaTeX Info: Redefining \ref on input line 79.
 LaTeX Info: Redefining \pageref on input line 79.
 LaTeX Info: Redefining \nameref on input line 79.
 (./Gender-Briefs.out) (./Gender-Briefs.out)
-\@outlinefile=\write3
-\openout3 = `Gender-Briefs.out'.
+\@outlinefile=\write4
+\openout4 = `Gender-Briefs.out'.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -774,7 +1061,7 @@ LaTeX Info: Redefining \nameref on input line 79.
 * \evensidemargin=-43.81725pt
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
-* \headsep=31.2982pt
+* \headsep=28.45274pt
 * \topskip=10.0pt
 * \footskip=30.0pt
 * \marginparwidth=65.0pt
@@ -835,81 +1122,90 @@ File: downicon.png Graphic file (type bmp)
 File: naicon.png Graphic file (type bmp)
 <naicon.png>
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
-(Font)              scaled to size 9.0pt on input line 94.
+(Font)              scaled to size 9.0pt on input line 95.
 
-Overfull \hbox (5.71097pt too wide) in paragraph at lines 117--117
+Overfull \hbox (5.71097pt too wide) in paragraph at lines 113--113
 []|\T1/Montserrat-TLF/regular/n/8 Gender|  
  []
 
 
-Overfull \hbox (9.86298pt too wide) in paragraph at lines 117--117
+Overfull \hbox (9.86298pt too wide) in paragraph at lines 113--113
  []|\T1/Montserrat-TLF/regular/n/8 Baseline|
  []
 
 
-Overfull \hbox (4.50296pt too wide) in paragraph at lines 117--117
+Overfull \hbox (4.50296pt too wide) in paragraph at lines 113--113
  []|\T1/Montserrat-TLF/regular/n/8 Region|
  []
 
 
-Overfull \hbox (6.41496pt too wide) in paragraph at lines 117--117
+Overfull \hbox (6.41496pt too wide) in paragraph at lines 113--113
  []|\T1/Montserrat-TLF/regular/n/8 Income|
  []
 
 
-Overfull \hbox (1.43895pt too wide) in paragraph at lines 117--118
+Overfull \hbox (1.43895pt too wide) in paragraph at lines 113--114
  []|\T1/Montserrat-TLF/regular/n/8 Global|
  []
 
 
-Overfull \hbox (8.19072pt too wide) in alignment at lines 113--119
+Overfull \hbox (8.19072pt too wide) in alignment at lines 109--115
  [] [] [] [] [] [] [] [] [] 
  []
 
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/it' will be
-(Font)              scaled to size 8.0pt on input line 120.
+(Font)              scaled to size 8.0pt on input line 116.
 
-Overfull \hbox (5.71097pt too wide) in paragraph at lines 122--122
+Overfull \hbox (5.71097pt too wide) in paragraph at lines 118--118
 []|\T1/Montserrat-TLF/regular/n/8 Gender|  
  []
 
 
-Overfull \hbox (9.86298pt too wide) in paragraph at lines 122--122
+Overfull \hbox (9.86298pt too wide) in paragraph at lines 118--118
  []|\T1/Montserrat-TLF/regular/n/8 Baseline|
  []
 
 
-Overfull \hbox (4.50296pt too wide) in paragraph at lines 122--122
+Overfull \hbox (4.50296pt too wide) in paragraph at lines 118--118
  []|\T1/Montserrat-TLF/regular/n/8 Region|
  []
 
 
-Overfull \hbox (6.41496pt too wide) in paragraph at lines 122--122
+Overfull \hbox (6.41496pt too wide) in paragraph at lines 118--118
  []|\T1/Montserrat-TLF/regular/n/8 Income|
  []
 
 
-Overfull \hbox (1.43895pt too wide) in paragraph at lines 122--123
+Overfull \hbox (1.43895pt too wide) in paragraph at lines 118--119
  []|\T1/Montserrat-TLF/regular/n/8 Global|
  []
 
 
-Overfull \hbox (8.19072pt too wide) in alignment at lines 119--124
+Overfull \hbox (8.19072pt too wide) in alignment at lines 115--120
  [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (8.19072pt too wide) in alignment at lines 124--126
+Overfull \hbox (8.19072pt too wide) in alignment at lines 120--122
  [] [] [] [] [] [] [] [] [] 
  []
 
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
-(Font)              scaled to size 6.0pt on input line 128.
+(Font)              scaled to size 6.0pt on input line 124.
 
-Overfull \hbox (8.19072pt too wide) in alignment at lines 126--129
+Overfull \hbox (8.19072pt too wide) in alignment at lines 122--125
  [] [] [] [] [] [] [] [] [] 
  []
 
+
+Overfull \hbox (5.75897pt too wide) in paragraph at lines 129--129
+[]|\T1/Montserrat-TLF/regular/n/8 Female|  
+ []
+
+File: righticon.png Graphic file (type bmp)
+<righticon.png>
+File: righticon.png Graphic file (type bmp)
+<righticon.png>
 
 Overfull \hbox (5.75897pt too wide) in paragraph at lines 133--133
 []|\T1/Montserrat-TLF/regular/n/8 Female|  
@@ -924,15 +1220,6 @@ Overfull \hbox (5.75897pt too wide) in paragraph at lines 137--137
 []|\T1/Montserrat-TLF/regular/n/8 Female|  
  []
 
-File: righticon.png Graphic file (type bmp)
-<righticon.png>
-File: righticon.png Graphic file (type bmp)
-<righticon.png>
-
-Overfull \hbox (5.75897pt too wide) in paragraph at lines 141--141
-[]|\T1/Montserrat-TLF/regular/n/8 Female|  
- []
-
 File: upicon.png Graphic file (type bmp)
 <upicon.png>
 File: upicon.png Graphic file (type bmp)
@@ -944,7 +1231,7 @@ File: downicon.png Graphic file (type bmp)
 File: righticon.png Graphic file (type bmp)
 <righticon.png>
 
-Overfull \hbox (5.75897pt too wide) in paragraph at lines 151--151
+Overfull \hbox (5.75897pt too wide) in paragraph at lines 147--147
 []|\T1/Montserrat-TLF/regular/n/8 Female|  
  []
 
@@ -952,13 +1239,22 @@ File: downicon.png Graphic file (type bmp)
 <downicon.png>
 File: downicon.png Graphic file (type bmp)
 <downicon.png>
+
+Overfull \hbox (5.75897pt too wide) in paragraph at lines 154--154
+[]|\T1/Montserrat-TLF/regular/n/8 Female|  
+ []
+
+File: downicon.png Graphic file (type bmp)
+<downicon.png>
+File: righticon.png Graphic file (type bmp)
+<righticon.png>
 
 Overfull \hbox (5.75897pt too wide) in paragraph at lines 158--158
 []|\T1/Montserrat-TLF/regular/n/8 Female|  
  []
 
-File: downicon.png Graphic file (type bmp)
-<downicon.png>
+File: righticon.png Graphic file (type bmp)
+<righticon.png>
 File: righticon.png Graphic file (type bmp)
 <righticon.png>
 
@@ -977,22 +1273,13 @@ Overfull \hbox (5.75897pt too wide) in paragraph at lines 166--166
 
 File: righticon.png Graphic file (type bmp)
 <righticon.png>
-File: righticon.png Graphic file (type bmp)
-<righticon.png>
+File: downicon.png Graphic file (type bmp)
+<downicon.png>
 
 Overfull \hbox (5.75897pt too wide) in paragraph at lines 170--170
 []|\T1/Montserrat-TLF/regular/n/8 Female|  
  []
 
-File: righticon.png Graphic file (type bmp)
-<righticon.png>
-File: downicon.png Graphic file (type bmp)
-<downicon.png>
-
-Overfull \hbox (5.75897pt too wide) in paragraph at lines 174--174
-[]|\T1/Montserrat-TLF/regular/n/8 Female|  
- []
-
 File: naicon.png Graphic file (type bmp)
 <naicon.png>
 File: naicon.png Graphic file (type bmp)
@@ -1002,7 +1289,7 @@ File: naicon.png Graphic file (type bmp)
 File: naicon.png Graphic file (type bmp)
 <naicon.png>
 
-Overfull \hbox (5.75897pt too wide) in paragraph at lines 182--182
+Overfull \hbox (5.75897pt too wide) in paragraph at lines 178--178
 []|\T1/Montserrat-TLF/regular/n/8 Female|  
  []
 
@@ -1021,7 +1308,7 @@ File: upicon.png Graphic file (type bmp)
 File: naicon.png Graphic file (type bmp)
 <naicon.png>
 
-Overfull \hbox (5.75897pt too wide) in paragraph at lines 199--199
+Overfull \hbox (5.75897pt too wide) in paragraph at lines 195--195
 []|\T1/Montserrat-TLF/regular/n/8 Female|  
  []
 
@@ -1030,18 +1317,18 @@ File: naicon.png Graphic file (type bmp)
 File: naicon.png Graphic file (type bmp)
 <naicon.png>
 
-Overfull \hbox (8.19072pt too wide) in alignment at lines 129--202
+Overfull \hbox (8.19072pt too wide) in alignment at lines 125--198
  [] [] [] [] [] [] [] [] [] 
  []
 
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 206.
+(Font)              scaled to size 10.0pt on input line 202.
 File: Flag_of_Colombia.png Graphic file (type bmp)
 <Flag_of_Colombia.png>
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
-(Font)              scaled to size 22.0pt on input line 206.
+(Font)              scaled to size 22.0pt on input line 202.
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
-(Font)              scaled to size 22.0pt on input line 206.
+(Font)              scaled to size 22.0pt on input line 202.
 File: gender-logo.png Graphic file (type bmp)
 <gender-logo.png>
 
@@ -1055,7 +1342,7 @@ File: footer.png Graphic file (type bmp)
 <footer.png>
 
 LaTeX Font Warning: Font shape `T1/lmr/regular/n' undefined
-(Font)              using `T1/lmr/m/n' instead on input line 206.
+(Font)              using `T1/lmr/m/n' instead on input line 202.
 
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
@@ -1066,39 +1353,123 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 
 ]
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
-(Font)              scaled to size 14.0pt on input line 209.
-LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 222.
+(Font)              scaled to size 14.0pt on input line 207.
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 222.
+(Font)              scaled to size 14.0pt on input line 223.
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/it' will be
+(Font)              scaled to size 9.0pt on input line 223.
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
+(Font)              scaled to size 9.0pt on input line 290.
 
-Overfull \hbox (5.0105pt too wide) in paragraph at lines 222--259
-[][][][] [][][] [][][] [][][] [][][]
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 292.
+
+File: overall.png Graphic file (type bmp)
+<overall.png>
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
+(Font)              scaled to size 7.5pt on input line 297.
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
+(Font)              scaled to size 7.5pt on input line 298.
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/it' will be
+(Font)              scaled to size 14.0pt on input line 302.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 304.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 305.
+
+File: mobility.png Graphic file (type bmp)
+<mobility.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 317.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 318.
+
+File: workplace.png Graphic file (type bmp)
+<workplace.png>
+
+Overfull \hbox (3.59644pt too wide) in paragraph at lines 324--325
+ []\T1/Montserrat-TLF/bold/n/7.5 Workplace 
  []
 
-File: Gender-Briefs_files/figure-latex/genderlaw-1.pdf Graphic file (type pdf)
-<use Gender-Briefs_files/figure-latex/genderlaw-1.pdf>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 330.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 331.
+
+File: pay.png Graphic file (type bmp)
+<pay.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 343.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 344.
+
+File: marriage.png Graphic file (type bmp)
+<marriage.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 356.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 357.
+
+File: parenthood.png Graphic file (type bmp)
+<parenthood.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 371.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 372.
+
+File: entrepreneur.png Graphic file (type bmp)
+<entrepreneur.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 387.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 388.
+
+File: assets.png Graphic file (type bmp)
+<assets.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 402.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 403.
+
+File: pension.png Graphic file (type bmp)
+<pension.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 417.
+LaTeX Font Info:    Trying to load font information for TS1+Montserrat-TLF on input line 432.
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/montserrat/TS1Montserrat-TLF.fd
+File: TS1Montserrat-TLF.fd 2019/11/07 (autoinst) Font definitions for TS1/Montserrat-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/Montserrat-TLF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 432.
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 284.
+(Font)              scaled to size 10.0pt on input line 450.
 
-Package hyperref Warning: Suppressing empty link on input line 290.
+Package hyperref Warning: Suppressing empty link on input line 456.
 
+Missing character: There is no ’ ("2019) in font Montserrat-Regular-tlf-t1!
 Missing character: There is no ’ ("2019) in font Montserrat-Regular-tlf-t1!
 Missing character: There is no ’ ("2019) in font Montserrat-Regular-tlf-t1!
 Missing character: There is no ’ ("2019) in font Montserrat-Regular-tlf-t1!
+
+Package hyperref Warning: Suppressing empty link on input line 462.
+
 Missing character: There is no ’ ("2019) in font Montserrat-Regular-tlf-t1!
 
-Package hyperref Warning: Suppressing empty link on input line 296.
-
-Missing character: There is no ’ ("2019) in font Montserrat-Regular-tlf-t1!
-
-Package hyperref Warning: Suppressing empty link on input line 300.
+Package hyperref Warning: Suppressing empty link on input line 466.
 
 
-Package hyperref Warning: Suppressing empty link on input line 303.
+Package hyperref Warning: Suppressing empty link on input line 469.
 
 
-Package hyperref Warning: Suppressing empty link on input line 304.
+Package hyperref Warning: Suppressing empty link on input line 470.
 
 File: Flag_of_Colombia.png Graphic file (type bmp)
 <Flag_of_Colombia.png>
@@ -1128,12 +1499,12 @@ Package rerunfilecheck Info: File `Gender-Briefs.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21420 strings out of 478178
- 400063 string characters out of 5852399
- 863725 words of memory out of 5000000
- 41697 multiletter control sequences out of 15000+600000
- 657310 words of font info for 65 fonts, out of 8000000 for 9000
+ 32852 strings out of 478178
+ 651761 string characters out of 5852399
+ 1108844 words of memory out of 5000000
+ 52883 multiletter control sequences out of 15000+600000
+ 717593 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 108i,12n,120p,1138b,384s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 110i,12n,120p,1627b,1112s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on Gender-Briefs.pdf (2 pages).
