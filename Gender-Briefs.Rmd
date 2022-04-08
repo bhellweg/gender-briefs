@@ -1,0 +1,201 @@
+---
+output: 
+  pdf_document:
+    latex_engine: xelatex
+    fig_caption: yes
+    keep_tex: yes
+geometry: "left=1cm,right=1cm,top=2cm,bottom=2cm"
+header-includes: 
+  \usepackage{fancyhdr} 
+  \pagestyle{fancy}
+  \usepackage{graphicx} 
+  \usepackage{eurosym} 
+  \usepackage{xcolor}
+  \usepackage{booktabs,xcolor}
+  \definecolor{myblue}{HTML}{5F7ED9}
+  \definecolor{wblight}{HTML}{f8f4fc}
+  \rhead{\includegraphics[width=3.5cm]{gender-logo.png}}
+  \lhead{\includegraphics[width=1.25cm]{Flag_of_Colombia.png}\fontsize{22}{1}\selectfont\textbf{ COLOMBIA \textcolor{myblue}{GENDER LANDSCAPE}}}
+  \rfoot{Last compiled on `r format(Sys.time(), '%d %B, %Y')`}  
+  \lfoot{\includegraphics[width=19.5cm]{footer.png}} 
+  \fancypagestyle{plain}{\pagestyle{fancy}} 
+  \pagenumbering{gobble}
+  \usepackage[defaultfam,tabular,lining]{montserrat}
+  \usepackage[fontsize=8pt]{scrextend}
+  \usepackage{float}
+  \restylefloat{table}
+  \usepackage{multicol}
+  \newcommand{\hideFromPandoc}[1]{#1}
+  \hideFromPandoc{
+    \let\Begin\begin
+    \let\End\end
+  }
+  \usepackage{caption}
+  \captionsetup{skip=0pt} 
+  \setlength{\headsep}{1.1cm}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.table.format = "latex")
+
+library(wbstats)
+library(tidyverse)
+library(kableExtra)
+library(knitr)
+library(ggplot2)
+library(maps)
+library(viridis)
+library(cowplot)
+
+
+load("mapregion.RData")
+load("wbtable.RData")
+load("callouts.RData")
+load("resources.RData")
+load("lawchart.RData")
+load("regionallinks.RData")
+load("globallinks.RData")
+load("introtext.RData")
+country_run <- "Colombia"
+
+```
+
+```{r legend, include=T, echo = F,warning=F}
+Comparison <- c("Higher Performance", "Equal/No Change", "Lower Performance", "No Data")
+Baseline <- c("","","","")
+Region <- c(" "," "," "," ")
+data.frame(Comparison,Baseline,Region) %>% 
+kbl(booktabs = T,toprule = "",bottomrule = "") %>%
+  kable_styling(full_width = F, position = "float_right",font_size = 8,bootstrap_options = "none") %>% 
+    column_spec(3,background = spec_color(c(1,2,3,NA), end = 0.8,begin = 0.4, na_color = "lightgray",option = "turbo")) %>%
+  column_spec(2,image = spec_image(c("upicon.png","righticon.png","downicon.png","naicon.png"), 30, 30)) %>% 
+  row_spec(0,bold = T)
+
+```
+\fontsize{9}{8}\selectfont
+This brief provides a quick overview of the gender landscape in Colombia on some key indicators. For `r country_run`, the highest performing indicators relative to the baseline year are `r introtext[[1]][1]` and `r introtext[[1]][2]`. The largest declines relative to the baseline year are `r introtext[[1]][15]` and `r introtext[[1]][14]`.
+\normalsize
+\vspace{2pt}
+  
+\renewcommand{\arraystretch}{1.15}
+
+```{r table, include=T, echo = F,warning=F}
+
+footnote <- "Data retrieved from World Bank Gender Data Portal. Country Baseline provides a reference point for the indicator, circa 2010. LAC = Includes the 42 countries (all income levels) in Latin America and the Caribbean, as classified by The World Bank Group. UMC = In FY21, upper- middle-income countries are those with a GNI per capita between $4,046 and $12,535 (calculated using the World Bank Atlas method)."
+
+wb_table %>% 
+  head(.,nrow(.)-9) %>% 
+  select(-c(1,11:18)) %>% 
+  kbl(booktabs = T,longtable = T) %>% 
+  column_spec(1,width = "9cm",link = wb_table$vlinks) %>% 
+  column_spec(2:9,width = ".85cm") %>% 
+  column_spec(5,color = "black",bold = T,
+              background = spec_color(wb_table$RegionChange, end = 0.8,begin = 0.4, na_color = "lightgray",option = "turbo")) %>%
+  column_spec(6,image = spec_image(wb_table$iconRegion, 30, 30)) %>%
+  pack_rows("HUMAN ENDOWMENTS",1,11,background = "lightgray",indent = F,hline_after = T) %>% 
+  pack_rows("ECONOMIC OPPORTUNITY",12,25,background = "lightgray",indent = F,hline_after = T) %>% 
+  pack_rows("VOICE AND AGENCY",26,32,background = "lightgray",indent = F,hline_after = T) %>% 
+  kable_styling(latex_options=c("hold_position", 
+                                "repeat_header"),
+                font_size = 8,full_width = F) %>%
+  add_header_above(c(" " = 2, "Columbia's Performance" = 4, "Peers Comparison" = 3
+                     )) %>% 
+  collapse_rows(.,columns = 1,valign = "middle",latex_hline = "major") %>% 
+  footnote(footnote_as_chunk = TRUE,
+           threeparttable = TRUE,
+           general = footnote)
+```
+
+\newpage
+\clearpage 
+
+\fontsize{14}{8}\selectfont
+Gender Equality in Colombia
+\normalsize
+
+\fboxrule.6pt\fboxsep6pt
+\fcolorbox{myblue}{wblight}{\color{black}
+\begin{minipage}[c][2.5cm][t]{3.45cm}
+\raggedright\fontsize{12}{1}\selectfont   
+\textbf{`r callouts[[5]][1]`} 
+\normalsize
+  
+\vspace{.3cm}
+  
+\emph{`r callouts[[4]][1]`}
+\end{minipage}} 
+\fcolorbox{myblue}{wblight}{\color{black}
+\begin{minipage}[c][2.5cm][t]{3.45cm}
+\raggedright\fontsize{12}{1}\selectfont   
+\textbf{`r callouts[[5]][2]`} 
+\normalsize
+  
+\vspace{.3cm}
+ 
+\emph{`r callouts[[4]][2]`}
+\end{minipage}} 
+\fcolorbox{myblue}{wblight}{\color{black}
+\begin{minipage}[c][2.5cm][t]{3.45cm}
+\raggedright\fontsize{12}{1}\selectfont   
+\textbf{`r callouts[[5]][3]`} 
+\normalsize
+  
+\vspace{.3cm}
+ 
+\emph{`r callouts[[4]][3]`}
+\end{minipage}} 
+\fcolorbox{myblue}{wblight}{\color{black}
+\begin{minipage}[c][2.5cm][t]{3.45cm}
+\raggedright\fontsize{12}{1}\selectfont   
+\textbf{`r callouts[[5]][4]`} 
+\normalsize
+  
+\vspace{.3cm}
+ 
+\emph{`r callouts[[4]][4]`}
+\end{minipage}} 
+\fcolorbox{myblue}{wblight}{\color{black}
+\begin{minipage}[c][2.5cm][t]{3.45cm}
+\raggedright\fontsize{12}{1}\selectfont   
+\textbf{`r callouts[[5]][5]`} 
+\normalsize
+  
+\vspace{.3cm}
+ 
+\emph{`r callouts[[4]][5]`}
+\end{minipage}}
+\vspace{.2cm}
+    
+\fontsize{14}{8}\selectfont
+Gender Equality and the Law
+\normalsize
+
+Women, Business and the Law 2021 presents an index covering 190 economies and structured around the life cycle of a working woman. In total, 35 questions are scored across the eight indicators. Colombia scores 81.9 out of 100, higher than the regional average observed across Latin America & Caribbean (80.1).
+```{r genderlaw, include=T, echo = F,warning=F,out.width="100%",fig.align='center',out.extra='trim={0 3.1cm 0 3.1cm},clip'}
+plot_grid(map_region,NULL,lawchart,rel_widths = c(12,3,17),align = "h",nrow = 1,ncol = 3)
+```
+
+***
+
+\fontsize{14}{8}\selectfont
+Curated resources to address gender gaps
+\normalsize
+
+Click on the links below for more information
+
+```{r links, include=T, echo = F,warning=F,out.extra='trim={0 3.1cm 0 3.1cm},clip'}
+
+resources %>% 
+  kbl(booktabs = T, longtable = F) %>% 
+  kable_styling(font_size = 8,full_width = F,
+                position = "float_left") %>% 
+  column_spec(1,link = globallinks,width = '9cm') %>% 
+  column_spec(2,link = regionallinks,width = '9cm') %>%
+  row_spec(row = 0,font_size = 10,bold = T) %>% 
+  pack_rows("Human Endowments",1,3,indent = F,latex_align = "c")%>% 
+  pack_rows("Economic Opportunity",4,7,indent = F,latex_align = "c") %>% 
+  pack_rows("Voice and Agency",8,9,indent = F,latex_align = "c") %>% 
+  pack_rows("Girls Green, Resilient, & Economic Development",10,11,indent = F,latex_align = "c") 
+
+```
