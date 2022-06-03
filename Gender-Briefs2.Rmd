@@ -1,0 +1,397 @@
+---
+output: 
+  pdf_document:
+    latex_engine: xelatex
+    fig_caption: yes
+    keep_tex: yes
+geometry: "left=1cm,right=1cm,top=2cm,bottom=1.5cm"
+header-includes: 
+  \usepackage{fancyhdr} 
+  \pagestyle{fancy}
+  \usepackage{graphicx} 
+  \usepackage{eurosym} 
+  \usepackage{xcolor}
+  \usepackage{booktabs,xcolor}
+  \definecolor{myblue}{HTML}{5F7ED9}
+  \definecolor{wblight}{HTML}{f8f4fc}
+  \definecolor{wbmid}{HTML}{f0ecfc}
+  \definecolor{wbpurple}{HTML}{c8c4ec}
+  \definecolor{wbfemale}{HTML}{303c84}
+  \definecolor{wbmale}{HTML}{707cbc}
+  \rhead{\includegraphics[width=4cm]{gender-logo.png}}
+  \lhead{\includegraphics[width=1cm]{Flag_of_Colombia.png}\fontsize{22}{1}\selectfont\textbf{ COLOMBIA \textcolor{myblue}{GENDER LANDSCAPE}}}
+  \lfoot{\mbox{\kern\dimexpr-1cm\includegraphics[width=\paperwidth]{footer.png}}}
+  \fancypagestyle{plain}{\pagestyle{fancy}} 
+  \pagenumbering{gobble}
+  \usepackage[defaultfam,tabular,lining]{montserrat}
+  \usepackage[fontsize=8pt]{scrextend}
+  \usepackage{float}
+  \restylefloat{table}
+  \usepackage{multicol}
+  \usepackage{paralist}
+  \usepackage{hyperref}
+  \newcommand{\hideFromPandoc}[1]{#1}
+  \hideFromPandoc{
+    \let\Begin\begin
+    \let\End\end
+  }
+  \usepackage{caption}
+  \usepackage[framemethod=tikz]{mdframed}
+  \newmdenv[innerlinewidth=0.5pt, roundcorner=24pt,linecolor=white,backgroundcolor=wbpurple,innerleftmargin=2pt,innerrightmargin=2pt,innertopmargin=2pt,innerbottommargin=0pt,nobreak=True,leftmargin = 3.5pt,rightmargin = 3.5pt]{mybox}
+  \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+              \node[shape=circle,text width=30pt,align=center,draw=wbpurple,minimum size=30pt,outer sep=0pt,fill=wblight] (char) {#1};}}
+  \newcommand*\squared[1]{\tikz[baseline=(char.base)]{
+              \node[shape=rectangle,text width=3.15cm,align=center,draw=wbpurple,minimum size=1.5cm,outer sep=0pt,inner sep=4pt,fill=wblight] (char) {#1};}}
+  \captionsetup{skip=0pt} 
+  \setlength{\headsep}{.55cm}
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(knitr.table.format = "latex")
+
+library(wbstats)
+library(tidyverse)
+library(kableExtra)
+library(knitr)
+library(ggplot2)
+library(maps)
+library(viridis)
+
+
+load("mapregion.RData")
+load("wbtable.RData")
+load("callouts.RData")
+load("lawchart.RData")
+load("breaks.RData")
+load("link.RData")
+load("introtext.RData")
+load("FCVsentence.RData")
+load("HCI.RData")
+load("income_abbrev.RData")
+load("region_abbrev.RData")
+load("region_run.RData")
+load("income_run.RData")
+load("country_run.RData")
+load("count_region.RData")
+load("count_income.RData")
+load('incomerange.RData')
+
+region_rmd <- gsub("&","and",region_run)
+
+```
+```{r legend, include=T, echo = F,warning=F}
+Comparison <- c(">10% Higher Value", "Equal/No Change", ">10% Lower Value", "No Data")
+Baseline <- c("","","","")
+Region <- c(" "," "," "," ")
+data.frame(Comparison,Baseline,Region) %>% 
+kbl(booktabs = T,toprule = "",bottomrule = "",
+    col.names = c("Compared to:","Base Year","Region"),align = "lcl") %>%
+  kable_styling(full_width = F, position = "float_right",font_size = 8,bootstrap_options = "none") %>% 
+    column_spec(3,background = spec_color(c(1,2,3,NA), end = 0.1,begin = 0.5, na_color = "gray",option = 'viridis',alpha=0.8)) %>%
+  column_spec(2,image = spec_image(c("upicon.png","righticon.png","downicon.png","naicon.png"), 30, 30)) %>% 
+  row_spec(0,bold = T)
+```
+\begin{minipage}[t][1.7cm][t]{12cm}
+\fontsize{9}{8}\selectfont\raggedright
+This briefing showcases the gender landscape in `r country_run` on key indicators helpful for monitoring gender equality and designing effective policy interventions. `r FCVsentence`Gender equality fosters productivity gains and minimizes losses in wealth, reducing poverty, boosting shared prosperity, and supporting green, resilient, and inclusive development. 
+
+\includegraphics[width=10pt]{pointer.png} Click the links below to explore the \underline{\href{https://genderdata.worldbank.org/}{World Bank Gender Data Portal}}.
+\end{minipage}
+\vspace{6pt}
+  
+
+```{r table, include=T, echo = F,warning=F}
+
+footnote <- paste(c("\\\\textcolor{darkgray}{Data retrieved from \\\\underline{\\\\href{https://genderdata.worldbank.org/}{World Bank Gender Data Portal}}. Country Baseline provides a reference point for the indicator between 1990 and 2010. The ",region_rmd," (",region_abbrev,") "," region includes the ",count_region," countries (all income levels), as classified by The World Bank Group. ",country_run," is an ",income_run," (",income_abbrev,") country, which includes ",count_income," countries with a Gross National Income (GNI) per capita between ",incomerange," (calculated using the World Bank Atlas method). Data definitions can be found on the \\\\underline{\\\\href{https://genderdata.worldbank.org/}{Gender Data Portal}}. All estimates are International Labour Organization (ILO) estimates where available.} 
+
+\\\\textcolor{darkgray}{Comparison with the baseline year is represented by an arrow icon that points to increases or decreases greater than 10 percent relative to the base year. Comparison to the regional average shows how ",country_run," performs relative to its peers in the region. Darker shades represent values 10 percent or more below its peers, while lighter shades represent values 10 percent or more higher than its peers in the region.}"),collapse = "")
+
+
+wb_table %>% 
+  head(.,nrow(.)-9) %>% 
+  select(-c(1,11:17)) %>% 
+  mutate(Icons = "") %>% 
+  mutate(Baseline = with(., ifelse(Baseline > 10, ifelse(Baseline > 100, sprintf("%.0f",Baseline), sprintf("%.1f",Baseline)), sprintf("%.2f",Baseline)))) %>%
+  mutate(Rating = with(., ifelse(Rating > 10, ifelse(Rating > 100, sprintf("%.0f",Rating), sprintf("%.1f",Rating)), sprintf("%.2f",Rating)))) %>%
+  mutate(Region = with(., ifelse(Region > 10, ifelse(Region > 100, sprintf("%.0f",Region), sprintf("%.1f",Region)), sprintf("%.2f",Region)))) %>%
+  mutate(UMIC = with(., ifelse(UMIC > 10, ifelse(UMIC > 100, sprintf("%.0f",UMIC), sprintf("%.1f",UMIC)), sprintf("%.2f",UMIC)))) %>%
+  mutate(World = with(., ifelse(World > 10, ifelse(World > 100, sprintf("%.0f",World), sprintf("%.1f",World)), sprintf("%.2f",World)))) %>%
+  select(c(1:4,10,5:9)) %>% 
+  kbl(booktabs = T,longtable = T,
+      col.names = c("","","Value","Year","","Value","Year",region_abbrev,income_abbrev,"World"),
+      align = "llcccccccc") %>% 
+  column_spec(1,width = "9cm",link = wb_table$link) %>% 
+  column_spec(2:10,width = "1.1cm") %>% 
+  column_spec(5,width_min = ".2cm",latex_valign = "m") %>%
+  column_spec(6,color = "white",bold = T,
+              background = spec_color(wb_table$RegionChange, end = 0.5,begin = 0.1, na_color = "gray",option = "viridis",alpha = 0.8)) %>%
+  column_spec(3:4,color = spec_color(wb_table$Baseline,end = 0,begin =0, option = "A",na_color = "gray")) %>%
+  column_spec(7,color = spec_color(wb_table$Rating,end = 0,begin =0, option = "A",na_color = "gray")) %>%
+  column_spec(8,color = spec_color(wb_table$Region,end = 0,begin =0, option = "A",na_color = "gray")) %>%
+  column_spec(9,color = spec_color(wb_table$UMIC,end = 0,begin =0, option = "A",na_color = "gray")) %>%
+  column_spec(10,color = spec_color(wb_table$World,end = 0,begin =0, option = "A",na_color = "gray")) %>%
+  column_spec(5,image = spec_image(wb_table$iconRegion, 30, 30)) %>%
+  pack_rows("HUMAN ENDOWMENTS",1,breaks[[1]],background = "lightgray",indent = F,hline_after = F) %>% 
+  pack_rows("ECONOMIC OPPORTUNITY",breaks[[2]],breaks[[3]],background = "lightgray",indent = F,hline_after = F) %>% 
+  pack_rows("VOICE AND AGENCY",breaks[[4]],breaks[[5]],background = "lightgray",indent = F,hline_after = F) %>% 
+  kable_styling(latex_options=c("hold_position", 
+                                "repeat_header"),
+                font_size = 7.5,full_width = F) %>%
+    add_header_above(c(" " = 2, "Baseline" = 2, " " = 1, "Latest" = 2, "Latest" = 3),bold = T) %>%
+  row_spec(0,bold = T) %>% 
+  add_header_above(c(" " = 2, "Country Performance" = 5, "Peer Comparison" = 3),bold = T) %>%
+  row_spec(0,bold = T) %>% 
+  collapse_rows(.,columns = 1,valign = "middle",latex_hline = "major") %>% 
+  footnote(footnote_as_chunk = TRUE,
+           threeparttable = TRUE,
+           general = footnote,
+           fixed_small_size = F,
+           escape = F)
+```
+
+\newpage
+\clearpage 
+
+\raggedright
+\vspace{.1cm}
+\fcolorbox{white}{white}{\color{black}
+\begin{minipage}[c][1.4cm][t]{19.5cm}
+\begin{minipage}[c][1.4cm][t]{6.5cm}
+\fontsize{14}{1}\selectfont   
+Women, Business and
+  
+\vspace{.2cm}
+  
+the Law in `r country_run`
+\normalsize
+\end{minipage}
+\begin{minipage}[c][1.4cm][t]{12.5cm}
+\fontsize{9}{8}\selectfont   
+\textbf{\underline{\href{http://graphicacy-wb-gender-portal.s3-website-us-east-1.amazonaws.com/indicators/sg-law-indx}{Women, Business and the Law 2022}}} presents an index covering 190 economies, structured around the life cycle of a working woman. In total, 35 questions are scored across eight indicators. \textbf{`r country_run` scores `r wb_table[[6]][31]` out of 100,} while the regional average across `r region_rmd` is 80.1.
+\normalsize
+\end{minipage}
+\end{minipage}}
+
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
+\vspace{.3cm}
+\includegraphics[height=.75cm]{overall.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Overall}\normalsize 
+
+\vspace{12pt}
+\fontsize{14}{1}\selectfont 
+\centering\circled{{`r wb_table[[6]][31]`}}
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
+\vspace{.3cm}
+\includegraphics[height=.75cm]{mobility.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Mobility}\normalsize 
+
+\vspace{12pt}
+\fontsize{14}{1}\selectfont 
+\centering\circled{{`r wb_table[[6]][34]`}}
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
+\vspace{.3cm}
+\includegraphics[height=.75cm]{workplace.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Workplace}\normalsize 
+
+\vspace{12pt}
+\fontsize{14}{1}\selectfont 
+\centering\circled{`r wb_table[[6]][39]`}
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
+\vspace{.3cm}
+\includegraphics[height=.75cm]{pay.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Pay}\normalsize 
+
+\vspace{12pt}
+\fontsize{14}{1}\selectfont 
+\centering\circled{{`r wb_table[[6]][38]`}}
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
+\vspace{.3cm}
+\includegraphics[height=.75cm]{marriage.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Marriage}\normalsize 
+
+\vspace{12pt}
+\fontsize{14}{1}\selectfont 
+\centering\circled{{`r wb_table[[6]][35]`}}
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
+\vspace{.3cm}
+\includegraphics[height=.75cm]{parenthood.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Parent-
+hood}\normalsize 
+
+\vspace{4pt}
+\fontsize{14}{1}\selectfont 
+\centering\circled{{`r wb_table[[6]][37]`}}
+
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
+
+\vspace{.3cm}
+\includegraphics[height=.75cm]{entrepreneur.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Entrepre-
+neurship}\normalsize 
+
+\vspace{2pt}
+\fontsize{14}{1}\selectfont 
+
+\centering\circled{{`r wb_table[[6]][33]`}}
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
+\vspace{.3cm}
+\includegraphics[height=.75cm]{assets.png}
+
+\vspace{.45cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Assets}
+  
+\normalsize 
+\vspace{12pt}
+\fontsize{14}{1}\selectfont 
+\centering\circled{{`r wb_table[[6]][32]`}}
+
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
+
+\vspace{.3cm}
+\includegraphics[height=.75cm]{pension.png}
+
+\vspace{.3cm}
+\fontsize{7.5}{1}\selectfont   
+\textbf{Pension}\normalsize 
+
+\vspace{12pt}
+\fontsize{14}{1}\selectfont 
+\centering\circled{{`r wb_table[[6]][36]`}}
+
+\vspace{.3cm}
+\normalsize\end{mybox}\end{minipage}
+  
+\vspace{.2cm}
+  
+\centering\rule{19.5cm}{0.5pt}
+
+\vspace{.2cm}
+
+\begin{minipage}[t][10.8cm][t]{13cm}
+\fontsize{14}{8}\selectfont
+A Closer Look at Gender Equality in `r country_run`\normalsize
+
+\vspace{.1cm}
+  
+\begin{minipage}[c][1cm][t]{12cm}
+\fontsize{9}{8}\selectfont
+The World Bank organizes its gender equality work across Endowment, Economic Opportunity, Voice and Agency, and Assets. These charts provide greater insight into key metrics across these pillars in `r country_run` using the \href{https://genderdata.worldbank.org/}{Gender Data Portal.}
+\end{minipage}
+
+\fcolorbox{white}{white}{\color{black}
+\begin{minipage}[t][8.3cm][t]{12.5cm}
+\vspace{.1cm}
+  
+\includegraphics[height=4cm]{HCIplot.png}  {\color{white} . }  
+\includegraphics[height=4cm]{wbl_plot.png}  {\color{white} . }  
+\includegraphics[height=4cm]{emp_country.png}
+
+\end{minipage}}
+   
+\vspace{.1cm} 
+\raggedright
+\textbf{Legend:} 
+\begin{compactitem}
+  \item\textcolor{wbfemale}{Female Indicator Values.}
+  
+  \item\textcolor{wbmale}{Male Indicator Values.}
+\end{compactitem}
+  
+\end{minipage}
+\fcolorbox{wbpurple}{wblight}{\color{black}
+\begin{minipage}[t][10.25cm][t]{6cm}
+
+\vspace{.2cm}
+\centering\begin{minipage}[t][9.5cm][t]{5.5cm}
+
+\vspace{.1cm}
+
+\raggedright
+\begin{itemize}
+  \item{A girl born today in `r country_run` will be \textbf{`r round(HCI$value[2]*100,0)` percent as productive} as if she enjoyed complete education, health and employment}
+
+  \item{\textbf{`r wb_table$Rating[10]/100` per thousand} 15-year-old female `r country_run` residents are expected to die from a maternal cause during their lifetimes}
+  
+  \item{In the last year, \textbf{one in five} women in `r country_run` were subjected to physical or sexual violence}
+
+  \item{\textbf{One in forty} women in `r country_run` believe it is ever justified for a man to beat his wife.}
+  
+  \item{\textbf{One in two} women in `r country_run` are in positions of vulnerable employment.}
+\end{itemize}\end{minipage}
+
+\end{minipage}}
+  
+\vspace{.5cm}
+  
+\centering\rule{19.5cm}{0.5pt}
+
+\vspace{.1cm}
+
+\fcolorbox{white}{white}{\color{black}
+\raggedright\begin{minipage}[t][4.75cm][t]{9cm}
+\fontsize{10}{12}\selectfont
+\textbf{ GENDER GROUP RESOURCES}
+\fontsize{9}{12}\selectfont
+
+\begin{itemize}
+  \item\textbf{\underline{\href{https://www.worldbank.org/en/topic/gender}{The World Bank in Gender}}}: This portal features the latest research, news, and events around gender equality in international development.
+  
+  \item\textbf{\underline{\href{https://www.ifc.org/wps/wcm/connect/Topics_Ext_Content/IFC_External_Corporate_Site/Gender+at+IFC}{IFC's Work in Gender}}}: This page provides an overview of the work by IFC to promote gender equality in its global partnerships.
+  
+  \item\textbf{\underline{\href{https://openknowledge.worldbank.org/handle/10986/23425}{World Bank Group Gender Strategy (FY16-FY23)}}}: This 2015 report outlines the World Bank Group's strategy to promote gender equality.
+\end{itemize}
+
+\end{minipage}}
+\fcolorbox{white}{white}{\color{black}
+\raggedright\begin{minipage}[t][4.75cm][t]{9cm}
+\fontsize{10}{12}\selectfont
+\textbf{ }
+\fontsize{9}{12}\selectfont
+
+\begin{itemize}
+  \item\textbf{\underline{\href{https://genderdata.worldbank.org/}{World Bank Gender Data Portal}}}: This open data page shares the latest statistics and research to improve understanding and inform policy choices.
+
+  \item\textbf{\underline{\href{https://wbl.worldbank.org/en/wbl}{Women, Business and the Law}}}: This portal includes reports, data, and  news on the laws and regulations that affect women's economic opportunity.
+  
+  \item\textbf{\underline{\href{`r link[1]`}{`r link[2]`}}}: This page identifies priority gender gaps in the `r region_abbrev` region and rigorously evaluates innovative solutions.
+\end{itemize}
+
+\end{minipage}}

@@ -15,9 +15,9 @@ header-includes:
   \definecolor{myblue}{HTML}{5F7ED9}
   \definecolor{wblight}{HTML}{f8f4fc}
   \definecolor{wbpurple}{HTML}{c8c4ec}
-  \rhead{\includegraphics[width=3.5cm]{gender-logo.png}}
-  \lhead{\includegraphics[width=1.25cm]{Flag_of_Colombia.png}\fontsize{22}{1}\selectfont\textbf{ COLOMBIA \textcolor{myblue}{GENDER LANDSCAPE}}}
-  \rfoot{Last compiled on `r format(Sys.time(), '%d %B, %Y')`}  
+  \rhead{\includegraphics[width=4cm]{gender-logo.png}}
+  \lhead{\includegraphics[width=1cm]{Flag_of_Colombia.png}\fontsize{22}{1}\selectfont\textbf{ COLOMBIA \textcolor{myblue}{GENDER LANDSCAPE}}}
+  \rfoot{Last prepared on `r format(Sys.time(), '%e %B, %Y')`}  
   \lfoot{\includegraphics[width=19.5cm]{footer.png}} 
   \fancypagestyle{plain}{\pagestyle{fancy}} 
   \pagenumbering{gobble}
@@ -26,6 +26,7 @@ header-includes:
   \usepackage{float}
   \restylefloat{table}
   \usepackage{multicol}
+  \usepackage{paralist}
   \usepackage{hyperref}
   \newcommand{\hideFromPandoc}[1]{#1}
   \hideFromPandoc{
@@ -34,9 +35,11 @@ header-includes:
   }
   \usepackage{caption}
   \usepackage[framemethod=tikz]{mdframed}
-  \newmdenv[innerlinewidth=0.5pt, roundcorner=24pt,linecolor=white,backgroundcolor=wbpurple,innerleftmargin=6pt,innerrightmargin=6pt,innertopmargin=6pt,innerbottommargin=6pt,nobreak=True,rightmargin = 7pt]{mybox}
+  \newmdenv[innerlinewidth=0.5pt, roundcorner=24pt,linecolor=white,backgroundcolor=wbpurple,innerleftmargin=2pt,innerrightmargin=2pt,innertopmargin=2pt,innerbottommargin=0pt,nobreak=True,leftmargin = 3.5pt,rightmargin = 3.5pt]{mybox}
+  \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+              \node[shape=circle,text width=30pt,align=center,draw=wbpurple,minimum size=30pt,outer sep=0pt,fill=wblight] (char) {#1};}}
   \captionsetup{skip=0pt} 
-  \setlength{\headsep}{1cm}
+  \setlength{\headsep}{.65cm}
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -55,7 +58,7 @@ library(cowplot)
 load("mapregion.RData")
 load("wbtable.RData")
 load("callouts.RData")
-load("resources.RData")
+load("resources1.RData")
 load("lawchart.RData")
 load("regionallinks.RData")
 load("globallinks.RData")
@@ -68,7 +71,8 @@ Comparison <- c("Higher Performance", "Equal/No Change", "Lower Performance", "N
 Baseline <- c("","","","")
 Region <- c(" "," "," "," ")
 data.frame(Comparison,Baseline,Region) %>% 
-kbl(booktabs = T,toprule = "",bottomrule = "") %>%
+kbl(booktabs = T,toprule = "",bottomrule = "",
+    col.names = c("Compared to:","Base Year","Region"),align = "lcl") %>%
   kable_styling(full_width = F, position = "float_right",font_size = 8,bootstrap_options = "none") %>% 
     column_spec(3,background = spec_color(c(1,2,3,NA), end = 0.8,begin = 0.4, na_color = "lightgray",option = "turbo")) %>%
   column_spec(2,image = spec_image(c("upicon.png","righticon.png","downicon.png","naicon.png"), 30, 30)) %>% 
@@ -76,37 +80,59 @@ kbl(booktabs = T,toprule = "",bottomrule = "") %>%
 ```
 \begin{minipage}[t][1.8cm][t]{12cm}
 \fontsize{9}{8}\selectfont\raggedright
-This brief provides an overview of the gender landscape in Colombia. For `r country_run`, the highest performing indicators relative to the baseline year are `r introtext[[1]][1]` and `r introtext[[1]][2]`. The largest declines relative to the baseline year are `r introtext[[1]][16]` and `r introtext[[1]][15]`. Click on the links below to explore further in the \href{http://graphicacy-wb-gender-portal.s3-website-us-east-1.amazonaws.com/}{World Bank Gender Portal}.
+This brief provides an overview of the gender landscape in Colombia. For `r country_run`, the highest performing indicators relative to the baseline year are `r introtext[[1]][1]` and `r introtext[[1]][2]`. The largest declines relative to the baseline year are `r introtext[[1]][16]` and `r introtext[[1]][15]`. 
+
+\includegraphics[width=10pt]{pointer.png} Click on the links below to explore in the \href{http://graphicacy-wb-gender-portal.s3-website-us-east-1.amazonaws.com/}{World Bank Gender Portal}.
 \end{minipage}
 \vspace{4pt}
   
-\renewcommand{\arraystretch}{1.15}
+\renewcommand{\arraystretch}{1}
 
 ```{r table, include=T, echo = F,warning=F}
 
-footnote <- "Data retrieved from World Bank Gender Data Portal. Country Baseline provides a reference point for the indicator, 2010 or earlier. The region, LAC, includes the 42 countries (all income levels) in Latin America and the Caribbean, as classified by The World Bank Group. The income level, UMC, includes upper-middle-income countries with a GNI per capita between $4,046 and $12,535 (calculated using the World Bank Atlas method). Data definitions can be found on the Gender Data Portal."
+footnote <- "\\\\textcolor{darkgray}{Data retrieved from \\\\href{https://genderdata.worldbank.org/}{World Bank Gender Data Portal}. Country Baseline provides the latest reference point for the indicator, years 1990 to 2010. The region, LAC, includes the 42 countries (all income levels) in Latin America and the Caribbean, as classified by The World Bank Group. Colombia is an upper-middle-income (UMC) country, which includes 55 countries with a GNI per capita between \\\\$4,046 and \\\\$12,535 (calculated using the World Bank Atlas method). Data definitions can be found on the \\\\href{https://genderdata.worldbank.org/}{Gender Data Portal}.} 
+
+\\\\textcolor{darkgray}{For baseline progress icons, an up or down arrow represents an increase or decrease of more than ten percent relative to the base year, respectively. The green and red region color coding represent ratings ten percent better or worse than the region average, respectively.}"
 
 wb_table %>% 
   head(.,nrow(.)-9) %>% 
   select(-c(1,11:18)) %>% 
-  kbl(booktabs = T,longtable = T) %>% 
-  column_spec(1,width = "9cm",link = wb_table$vlinks) %>% 
-  column_spec(2:9,width = ".85cm") %>% 
+  mutate(Icons = "") %>% 
+  mutate(Baseline = with(., ifelse(Baseline > 10, ifelse(Baseline > 100, sprintf("%.0f",Baseline), sprintf("%.1f",Baseline)), sprintf("%.2f",Baseline)))) %>%
+  mutate(Rating = with(., ifelse(Rating > 10, ifelse(Rating > 100, sprintf("%.0f",Rating), sprintf("%.1f",Rating)), sprintf("%.2f",Rating)))) %>%
+  mutate(Region = with(., ifelse(Region > 10, ifelse(Region > 100, sprintf("%.0f",Region), sprintf("%.1f",Region)), sprintf("%.2f",Region)))) %>%
+  mutate(UMIC = with(., ifelse(UMIC > 10, ifelse(UMIC > 100, sprintf("%.0f",UMIC), sprintf("%.1f",UMIC)), sprintf("%.2f",UMIC)))) %>%
+  mutate(World = with(., ifelse(World > 10, ifelse(World > 100, sprintf("%.0f",World), sprintf("%.1f",World)), sprintf("%.2f",World)))) %>%
+  select(c(1:6,10,7:9)) %>% 
+  kbl(booktabs = T,longtable = T,
+      col.names = c("","","Baseline","Year","Latest","Year","","Region","UMIC","World"),
+      align = "llcccccccc") %>% 
+  column_spec(1,width = "8cm",link = wb_table$vlinks) %>% 
+  column_spec(2:10,width_min = "1cm") %>% 
+  column_spec(7,width = "0.05cm") %>%
   column_spec(5,color = "black",bold = T,
-              background = spec_color(wb_table$RegionChange, end = 0.8,begin = 0.4, na_color = "lightgray",option = "turbo")) %>%
-  column_spec(6,image = spec_image(wb_table$iconRegion, 30, 30)) %>%
+              background = spec_color(wb_table$RegionChange, end = 0.77,begin = 0.42, na_color = "lightgray",option = "turbo")) %>%
+  column_spec(3:4,color = spec_color(wb_table$Baseline,end = 0,begin =0, option = "A",na_color = "gray")) %>%
+  column_spec(5:6,color = spec_color(wb_table$Rating,end = 0,begin =0, option = "A",na_color = "gray")) %>%
+  column_spec(8,color = spec_color(wb_table$Region,end = 0,begin =0, option = "A",na_color = "gray")) %>%
+  column_spec(9,color = spec_color(wb_table$UMIC,end = 0,begin =0, option = "A",na_color = "gray")) %>%
+  column_spec(10,color = spec_color(wb_table$World,end = 0,begin =0, option = "A",na_color = "gray")) %>%
+  column_spec(7,image = spec_image(wb_table$iconRegion, 30, 30)) %>%
   pack_rows("HUMAN ENDOWMENTS",1,11,background = "lightgray",indent = F,hline_after = T) %>% 
   pack_rows("ECONOMIC OPPORTUNITY",12,25,background = "lightgray",indent = F,hline_after = T) %>% 
   pack_rows("VOICE AND AGENCY",26,32,background = "lightgray",indent = F,hline_after = T) %>% 
   kable_styling(latex_options=c("hold_position", 
                                 "repeat_header"),
-                font_size = 8,full_width = F) %>%
-  add_header_above(c(" " = 2, "Columbia's Performance" = 4, "Peers Comparison" = 3
-                     )) %>% 
+                font_size = 7.5,full_width = F) %>%
+  add_header_above(c(" " = 2, "Colombia's Performance" = 5, "Peers Comparison" = 3
+                     ),bold = T) %>%
+  row_spec(0,bold = T) %>% 
   collapse_rows(.,columns = 1,valign = "middle",latex_hline = "major") %>% 
   footnote(footnote_as_chunk = TRUE,
            threeparttable = TRUE,
-           general = footnote)
+           general = footnote,
+           fixed_small_size = F,
+           escape = F)
 ```
 
 \newpage
@@ -127,7 +153,7 @@ Gender Equality in Colombia
 \normalsize  
 
 \centering\rule{2cm}{0.5pt}  
-\vspace{.15cm}
+\vspace{.1cm}
  
 \raggedright\fontsize{9}{1}\selectfont 
 \emph{`r callouts[[4]][1]`}
@@ -140,7 +166,7 @@ Gender Equality in Colombia
 \normalsize  
 
 \centering\rule{2cm}{0.5pt}  
-\vspace{.15cm}
+\vspace{.1cm}
  
 \raggedright\fontsize{9}{1}\selectfont 
 \emph{`r callouts[[4]][2]`}
@@ -203,10 +229,8 @@ Gender Equality in the Law
 \raggedright\textbf{\href{http://graphicacy-wb-gender-portal.s3-website-us-east-1.amazonaws.com/indicators/sg-law-indx}{Women, Business and the Law 2021}} presents an index covering 190 economies and structured around the life cycle of a working woman. In total, 35 questions are scored across the eight indicators. \textbf{Colombia scores `r wb_table[[6]][33]` out of 100,} while the regional average across Latin America and Caribbean is 80.1.
 \normalsize
 \end{minipage}}
-```{r genderlaw1, include=F, echo = F,warning=F,out.width="100%",fig.align='center',out.extra='trim={0 3.1cm 0 3.1cm},clip'}
-plot_grid(map_region,NULL,lawchart,rel_widths = c(12,3,17),align = "h",nrow = 1,ncol = 3)
-```
-\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
 \vspace{.3cm}
 \includegraphics[height=.75cm]{overall.png}
 
@@ -214,12 +238,12 @@ plot_grid(map_region,NULL,lawchart,rel_widths = c(12,3,17),align = "h",nrow = 1,
 \fontsize{7.5}{1}\selectfont   
 \textbf{Overall}\normalsize 
 
-\vspace{20pt}
+\vspace{12pt}
 \fontsize{14}{1}\selectfont 
-\emph{`r wb_table[[6]][33]`}
+\centering\circled{{`r wb_table[[6]][33]`}}
 \vspace{.3cm}
 \normalsize\end{mybox}\end{minipage}
-\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
 \vspace{.3cm}
 \includegraphics[height=.75cm]{mobility.png}
 
@@ -227,12 +251,12 @@ plot_grid(map_region,NULL,lawchart,rel_widths = c(12,3,17),align = "h",nrow = 1,
 \fontsize{7.5}{1}\selectfont   
 \textbf{Mobility}\normalsize 
 
-\vspace{20pt}
+\vspace{12pt}
 \fontsize{14}{1}\selectfont 
-\emph{`r wb_table[[6]][36]`}
+\centering\circled{{`r wb_table[[6]][36]`}}
 \vspace{.3cm}
 \normalsize\end{mybox}\end{minipage}
-\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
 \vspace{.3cm}
 \includegraphics[height=.75cm]{workplace.png}
 
@@ -240,12 +264,12 @@ plot_grid(map_region,NULL,lawchart,rel_widths = c(12,3,17),align = "h",nrow = 1,
 \fontsize{7.5}{1}\selectfont   
 \textbf{Workplace}\normalsize 
 
-\vspace{20pt}
+\vspace{12pt}
 \fontsize{14}{1}\selectfont 
-\emph{`r wb_table[[6]][41]`}
+\centering\circled{`r wb_table[[6]][41]`}
 \vspace{.3cm}
 \normalsize\end{mybox}\end{minipage}
-\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
 \vspace{.3cm}
 \includegraphics[height=.75cm]{pay.png}
 
@@ -253,12 +277,12 @@ plot_grid(map_region,NULL,lawchart,rel_widths = c(12,3,17),align = "h",nrow = 1,
 \fontsize{7.5}{1}\selectfont   
 \textbf{Pay}\normalsize 
 
-\vspace{20pt}
+\vspace{12pt}
 \fontsize{14}{1}\selectfont 
-\emph{`r wb_table[[6]][40]`}
+\centering\circled{{`r wb_table[[6]][40]`}}
 \vspace{.3cm}
 \normalsize\end{mybox}\end{minipage}
-\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
 \vspace{.3cm}
 \includegraphics[height=.75cm]{marriage.png}
 
@@ -266,12 +290,12 @@ plot_grid(map_region,NULL,lawchart,rel_widths = c(12,3,17),align = "h",nrow = 1,
 \fontsize{7.5}{1}\selectfont   
 \textbf{Marriage}\normalsize 
 
-\vspace{20pt}
+\vspace{12pt}
 \fontsize{14}{1}\selectfont 
-\emph{`r wb_table[[6]][37]`}
+\centering\circled{{`r wb_table[[6]][37]`}}
 \vspace{.3cm}
 \normalsize\end{mybox}\end{minipage}
-\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
 \vspace{.3cm}
 \includegraphics[height=.75cm]{parenthood.png}
 
@@ -280,13 +304,13 @@ plot_grid(map_region,NULL,lawchart,rel_widths = c(12,3,17),align = "h",nrow = 1,
 \textbf{Parent-
 hood}\normalsize 
 
-\vspace{12pt}
+\vspace{4pt}
 \fontsize{14}{1}\selectfont 
-\emph{`r wb_table[[6]][39]`}
+\centering\circled{{`r wb_table[[6]][39]`}}
 
 \vspace{.3cm}
 \normalsize\end{mybox}\end{minipage}
-\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
 
 \vspace{.3cm}
 \includegraphics[height=.75cm]{entrepreneur.png}
@@ -296,13 +320,13 @@ hood}\normalsize
 \textbf{Entrepre-
 neurship}\normalsize 
 
-\vspace{12pt}
+\vspace{4pt}
 \fontsize{14}{1}\selectfont 
 
-\emph{`r wb_table[[6]][35]`}
+\centering\circled{{`r wb_table[[6]][35]`}}
 \vspace{.3cm}
 \normalsize\end{mybox}\end{minipage}
-\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
 \vspace{.3cm}
 \includegraphics[height=.75cm]{assets.png}
 
@@ -311,13 +335,13 @@ neurship}\normalsize
 \textbf{Assets}
   
 \normalsize 
-\vspace{20pt}
+\vspace{12pt}
 \fontsize{14}{1}\selectfont 
-\emph{`r wb_table[[6]][34]`}
+\centering\circled{{`r wb_table[[6]][34]`}}
 
 \vspace{.3cm}
 \normalsize\end{mybox}\end{minipage}
-\begin{minipage}[c][3.5cm][t]{2.1cm}\begin{mybox}\centering
+\begin{minipage}[c][4.2cm][t]{2.1cm}\begin{mybox}\centering
 
 \vspace{.3cm}
 \includegraphics[height=.75cm]{pension.png}
@@ -326,9 +350,9 @@ neurship}\normalsize
 \fontsize{7.5}{1}\selectfont   
 \textbf{Pension}\normalsize 
 
-\vspace{20pt}
+\vspace{12pt}
 \fontsize{14}{1}\selectfont 
-\emph{`r wb_table[[6]][38]`}
+\centering\circled{{`r wb_table[[6]][38]`}}
 
 \vspace{.3cm}
 \normalsize\end{mybox}\end{minipage}
@@ -343,6 +367,7 @@ neurship}\normalsize
 \emph{Why do laws matter for gender equality?}
 \begin{itemize}
   \item\href{https://www.aeaweb.org/articles?id=10.1257/aeri.20190542}{Gendered Laws and Women in the Workforce}
+
   \item\href{https://sdgs.un.org/goals/goal5}{SDG Atlas 2020 Chapter 5: Legal progress towards gender equality}
 \end{itemize}
 \normalsize
@@ -360,18 +385,75 @@ Curated resources to address gender gaps
 
 Click on the links below for more information
 
-```{r links, include=T, echo = F,warning=F,out.extra='trim={0 3.1cm 0 3.1cm},clip'}
+\centering\rule{19.5cm}{0.5pt}
 
-resources %>% 
-  kbl(booktabs = T, longtable = F) %>% 
-  kable_styling(font_size = 8,full_width = F,
-                position = "float_left") %>% 
-  column_spec(1,link = globallinks,width = '9.25cm') %>% 
-  column_spec(2,link = regionallinks,width = '9.25cm') %>%
-  row_spec(row = 0,font_size = 10,bold = T) %>% 
-  pack_rows("Human Endowments",1,3,indent = F,latex_align = "c")%>% 
-  pack_rows("Economic Opportunity",4,7,indent = F,latex_align = "c") %>% 
-  pack_rows("Voice and Agency",8,9,indent = F,latex_align = "c") %>% 
-  pack_rows("Girls Green, Resilient, & Economic Development",10,11,indent = F,latex_align = "c") 
+\fcolorbox{white}{white}{\color{black}
+\raggedright\begin{minipage}[c][8.25cm][t]{9cm}
+\fontsize{9}{12}\selectfont
+\textbf{GLOBAL RESOURCES}
+\fontsize{8}{12}\selectfont
+
+\textbf{\href{`r resources1[[4]][1]`}{`r resources1[[1]][1]`}}
+\begin{compactitem}
+  \item \href{`r resources1[[4]][2]`}{`r resources1[[1]][2]`}
+  \item \href{`r resources1[[4]][3]`}{`r resources1[[1]][3]`}
+\end{compactitem}
+\textbf{\href{`r resources1[[4]][4]`}{`r resources1[[1]][4]`}}
+\begin{compactitem}
+  \item \href{`r resources1[[4]][5]`}{`r resources1[[1]][5]`}
+  \item \href{`r resources1[[4]][6]`}{`r resources1[[1]][6]`}
+  \item \href{`r resources1[[4]][7]`}{`r resources1[[1]][7]`}
+\end{compactitem}
+\textbf{\href{`r resources1[[4]][8]`}{`r resources1[[1]][8]`}}
+\begin{compactitem}
+  \item \href{`r resources1[[4]][9]`}{`r resources1[[1]][9]`}
+\end{compactitem}
+\textbf{\href{`r resources1[[4]][10]`}{`r resources1[[1]][10]`}}
+\begin{compactitem}
+  \item \href{`r resources1[[4]][11]`}{`r resources1[[1]][11]`}
+  \item \href{`r resources1[[4]][12]`}{`r resources1[[1]][12]`}
+\end{compactitem}
+\end{minipage}}
+\hfill\vline\hfill
+\fcolorbox{white}{white}{\color{black}
+\raggedright\begin{minipage}[c][8.25cm][t]{9cm}
+\fontsize{9}{12}\selectfont
+\textbf{REGIONAL RESOURCES}
+\fontsize{8}{12}\selectfont
+
+\textbf{\href{`r resources1[[3]][1]`}{`r resources1[[2]][1]`}}
+\begin{compactitem}
+  \item \href{`r resources1[[4]][2]`}{`r resources1[[2]][2]`}
+  \item \href{`r resources1[[4]][3]`}{`r resources1[[2]][3]`}
+  \item \href{`r resources1[[4]][5]`}{`r resources1[[2]][4]`}
+\end{compactitem}
+\textbf{\href{`r resources1[[3]][5]`}{`r resources1[[2]][5]`}}
+\begin{compactitem}
+  \item \href{`r resources1[[4]][5]`}{`r resources1[[2]][6]`}
+  \item \href{`r resources1[[4]][6]`}{`r resources1[[2]][7]`}
+  \item \href{`r resources1[[4]][7]`}{`r resources1[[2]][8]`}
+  \item \href{`r resources1[[4]][9]`}{`r resources1[[2]][9]`}
+\end{compactitem}
+\textbf{\href{`r resources1[[3]][10]`}{`r resources1[[2]][10]`}}
+\begin{compactitem}
+  \item \href{`r resources1[[4]][11]`}{`r resources1[[2]][11]`}
+  \item \href{`r resources1[[4]][12]`}{`r resources1[[2]][12]`}
+\end{compactitem}
+\end{minipage}}
+
+
+```{r links, include=F, echo = F,warning=F,out.extra='trim={0 3.1cm 0 3.1cm},clip'}
+
+#resources1 %>% 
+#  kbl(booktabs = T, longtable = F) %>% 
+#  kable_styling(font_size = 8,full_width = F,
+#                position = "float_left") %>% 
+#  column_spec(1,link = globallinks,width = '9.25cm') %>% 
+#  column_spec(2,link = regionallinks,width = '9.25cm') %>%
+#  row_spec(row = 0,font_size = 10,bold = T) %>% 
+#  pack_rows("Human Endowments",1,3,indent = F,latex_align = "c")%>% 
+#  pack_rows("Economic Opportunity",4,7,indent = F,latex_align = "c") %>% 
+#  pack_rows("Voice and Agency",8,9,indent = F,latex_align = "c") %>% 
+#  pack_rows("Girls Green, Resilient, & Economic Development",10,11,indent = F,latex_align = "c") 
 
 ```
