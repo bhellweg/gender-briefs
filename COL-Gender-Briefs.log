@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.5.31)  2 JUN 2022 19:57
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.5.31)  3 JUN 2022 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1183,6 +1183,10 @@ File: righticon.png Graphic file (type bmp)
 <righticon.png>
 File: downicon.png Graphic file (type bmp)
 <downicon.png>
+File: downicon.png Graphic file (type bmp)
+<downicon.png>
+File: righticon.png Graphic file (type bmp)
+<righticon.png>
 File: righticon.png Graphic file (type bmp)
 <righticon.png>
 File: righticon.png Graphic file (type bmp)
@@ -1211,33 +1215,37 @@ File: naicon.png Graphic file (type bmp)
 <naicon.png>
 File: naicon.png Graphic file (type bmp)
 <naicon.png>
+File: naicon.png Graphic file (type bmp)
+<naicon.png>
 File: upicon.png Graphic file (type bmp)
 <upicon.png>
 File: upicon.png Graphic file (type bmp)
 <upicon.png>
 File: upicon.png Graphic file (type bmp)
 <upicon.png>
+File: righticon.png Graphic file (type bmp)
+<righticon.png>
 File: upicon.png Graphic file (type bmp)
 <upicon.png>
 File: naicon.png Graphic file (type bmp)
 <naicon.png>
 
-Overfull \hbox (2.89809pt too wide) in alignment at lines 131--197
+Overfull \hbox (2.89809pt too wide) in alignment at lines 131--205
  [] [] [] [] [] [] [] [] [] [] 
  []
 
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
-(Font)              scaled to size 10.0pt on input line 201.
+(Font)              scaled to size 10.0pt on input line 209.
 File: pdf/co.pdf Graphic file (type pdf)
 <use pdf/co.pdf>
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
-(Font)              scaled to size 22.0pt on input line 201.
+(Font)              scaled to size 22.0pt on input line 209.
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
-(Font)              scaled to size 22.0pt on input line 201.
+(Font)              scaled to size 22.0pt on input line 209.
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/sl' in size <10> not available
-(Font)              Font shape `T1/Montserrat-TLF/regular/it' tried instead on input line 201.
+(Font)              Font shape `T1/Montserrat-TLF/regular/it' tried instead on input line 209.
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/it' will be
-(Font)              scaled to size 10.0pt on input line 201.
+(Font)              scaled to size 10.0pt on input line 209.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 22.56732pt, for example:
@@ -1254,7 +1262,7 @@ Overfull \hbox (28.49039pt too wide) has occurred while \output is active
 
 
 LaTeX Font Warning: Font shape `T1/lmr/regular/n' undefined
-(Font)              using `T1/lmr/m/n' instead on input line 201.
+(Font)              using `T1/lmr/m/n' instead on input line 209.
 
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
@@ -1265,131 +1273,131 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 
 ]
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
-(Font)              scaled to size 14.0pt on input line 222.
+(Font)              scaled to size 14.0pt on input line 230.
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
-(Font)              scaled to size 9.0pt on input line 222.
+(Font)              scaled to size 9.0pt on input line 230.
 
-Underfull \hbox (badness 1215) in paragraph at lines 222--222
+Underfull \hbox (badness 1215) in paragraph at lines 230--230
 []$[]$ \T1/Montserrat-TLF/regular/n/9 presents an in-dex cov-er-ing 190
  []
 
 
-Overfull \hbox (4.23921pt too wide) in paragraph at lines 222--223
+Overfull \hbox (4.23921pt too wide) in paragraph at lines 230--231
 [][][][]  
  []
 
 
 Package mdframed Warning: Value `True' is not supported by
-(mdframed)                option `nobreak' on input line 225.
+(mdframed)                option `nobreak' on input line 233.
 
 File: overall.png Graphic file (type bmp)
 <overall.png>
 
-Overfull \hbox (2.36795pt too wide) in paragraph at lines 235--235
+Overfull \hbox (2.36795pt too wide) in paragraph at lines 243--243
  [][][]\T1/Montserrat-TLF/regular/n/14 84.4[] 
  []
 
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 237.
+ mdframed uses option nobreak mdframed on input line 245.
 
 Package mdframed Warning: Value `True' is not supported by
-(mdframed)                option `nobreak' on input line 238.
+(mdframed)                option `nobreak' on input line 246.
 
 File: mobility.png Graphic file (type bmp)
 <mobility.png>
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 250.
+ mdframed uses option nobreak mdframed on input line 258.
 
 Package mdframed Warning: Value `True' is not supported by
-(mdframed)                option `nobreak' on input line 251.
+(mdframed)                option `nobreak' on input line 259.
 
 File: workplace.png Graphic file (type bmp)
 <workplace.png>
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 263.
+ mdframed uses option nobreak mdframed on input line 271.
 
 Package mdframed Warning: Value `True' is not supported by
-(mdframed)                option `nobreak' on input line 264.
+(mdframed)                option `nobreak' on input line 272.
 
 File: pay.png Graphic file (type bmp)
 <pay.png>
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 276.
+ mdframed uses option nobreak mdframed on input line 284.
 
 Package mdframed Warning: Value `True' is not supported by
-(mdframed)                option `nobreak' on input line 277.
+(mdframed)                option `nobreak' on input line 285.
 
 File: marriage.png Graphic file (type bmp)
 <marriage.png>
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 289.
+ mdframed uses option nobreak mdframed on input line 297.
 
 Package mdframed Warning: Value `True' is not supported by
-(mdframed)                option `nobreak' on input line 290.
+(mdframed)                option `nobreak' on input line 298.
 
 File: parenthood.png Graphic file (type bmp)
 <parenthood.png>
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 304.
+ mdframed uses option nobreak mdframed on input line 312.
 
 Package mdframed Warning: Value `True' is not supported by
-(mdframed)                option `nobreak' on input line 305.
+(mdframed)                option `nobreak' on input line 313.
 
 File: entrepreneur.png Graphic file (type bmp)
 <entrepreneur.png>
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 320.
+ mdframed uses option nobreak mdframed on input line 328.
 
 Package mdframed Warning: Value `True' is not supported by
-(mdframed)                option `nobreak' on input line 321.
+(mdframed)                option `nobreak' on input line 329.
 
 File: assets.png Graphic file (type bmp)
 <assets.png>
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 335.
+ mdframed uses option nobreak mdframed on input line 343.
 
 Package mdframed Warning: Value `True' is not supported by
-(mdframed)                option `nobreak' on input line 336.
+(mdframed)                option `nobreak' on input line 344.
 
 File: pension.png Graphic file (type bmp)
 <pension.png>
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 350.
+ mdframed uses option nobreak mdframed on input line 358.
 Missing character: There is no ’ ("2019) in font Montserrat-Regular-tlf-t1!
 File: HCIplot.png Graphic file (type bmp)
 <HCIplot.png>
-File: LFPplot2.png Graphic file (type bmp)
-<LFPplot2.png>
+File: LFPplot.png Graphic file (type bmp)
+<LFPplot.png>
 LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 386.
-LaTeX Font Info:    Trying to load font information for TS1+Montserrat-TLF on input line 460.
+(Font)              scaled to size 10.0pt on input line 394.
+LaTeX Font Info:    Trying to load font information for TS1+Montserrat-TLF on input line 468.
 (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/montserrat/TS1Montserrat-TLF.fd
 File: TS1Montserrat-TLF.fd 2019/11/07 (autoinst) Font definitions for TS1/Montserrat-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/Montserrat-TLF/regular/n' will be
-(Font)              scaled to size 9.0pt on input line 460.
+(Font)              scaled to size 9.0pt on input line 468.
 
-Underfull \hbox (badness 7273) in paragraph at lines 460--460
+Underfull \hbox (badness 7273) in paragraph at lines 468--468
 []$[]$\T1/Montserrat-TLF/regular/n/9 : This por-tal in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--460
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
 []$[]$\T1/Montserrat-TLF/regular/n/9 :
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 475--475
+Underfull \hbox (badness 1215) in paragraph at lines 483--483
 []$[]$\T1/Montserrat-TLF/regular/n/9 : This open data
  []
 
 
-Underfull \hbox (badness 5050) in paragraph at lines 475--475
-\T1/Montserrat-TLF/regular/n/9 di-tional con-text about the gen-der dy-namic in
+Underfull \hbox (badness 10000) in paragraph at lines 483--483
+[]$[]$\T1/Montserrat-TLF/regular/n/9 : This page pro-vides an
  []
 
 
-Underfull \hbox (badness 3148) in paragraph at lines 475--475
+Underfull \hbox (badness 3148) in paragraph at lines 483--483
 []$[]$\T1/Montserrat-TLF/regular/n/9 : This page fea-tures
  []
 
@@ -1425,8 +1433,8 @@ Package rerunfilecheck Info: File `COL-Gender-Briefs.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  33075 strings out of 478126
- 655675 string characters out of 5851684
- 1118030 words of memory out of 5000000
+ 655667 string characters out of 5851684
+ 1125003 words of memory out of 5000000
  53151 multiletter control sequences out of 15000+600000
  694965 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191

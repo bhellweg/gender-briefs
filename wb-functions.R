@@ -131,3 +131,60 @@ wb_icons <- function(x){
          ifelse(x == -1,"downicon.png",
                 ifelse(x == 1, "upicon.png","righticon.png")))
 }
+
+#Simplifying numbers for the factoids
+wb_simple <- function(num){
+  x<-round(num/5,0)*5
+  if(x==5){return("1 in 20")}else{
+    if(x==10){return("1 in 10")}else{
+      if(x==15){return("1 in 6")}else{
+        if(x==20){return("1 in 5")}else{
+          if(x==25){return("1 in 4")}else{
+            if(x==30){return("1 in 3")}else{
+              if(x==35){return("1 in 3")}else{
+                if(x==40){return("2 in 5")}else{
+                  if(x==45){return("1 in 2")}else{
+                    if(x==50){return("1 in 2")}else{
+                      if(x==55){return("Over 1 in 2")}else{
+                        if(x==60){return("3 in 5")}else{
+                          if(x==65){return("2 out of 3")}else{
+                            if(x==70){return("7 in 10")}else{
+                              if(x==75){return("3 in 4")}else{
+                                if(x==80){return("4 out of 5")}else{
+                                  if(x==85){return("5 out of 6")}else{
+                                    if(x==90){return("9 out of 10")}else{
+                                      if(x==95){return("19 in 20")}else{
+                                        if(x==100){return("One hundred percent")}else{
+                                          x
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      } 
+    }  
+  }}
+
+#Rename regions
+make_abbrev <- function(x){
+  if(x == "LCN"){x <- "LAC"}
+  if(x == "SAS"){x <- "SAS"}
+  if(x == "SSF"){x <- "SSA"}
+  if(x == "ECS"){x <- "ECA"}
+  if(x == "MEA"){x <- "MNA"}
+  if(x == "EAS"){x <- "EAP"}
+  if(x == "NAC"){x <- "NAC"}
+  paste(x)
+}

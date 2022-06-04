@@ -1,10 +1,19 @@
 library(knitr)
 library(wbstats)
+library(tidyverse)
 
 source('wb-load.R')
 source('wb-functions.R')
 
-for(i in c('Thailand','Brazil','France','Kenya','China','Colombia')){
+#Create list of countries receiving briefs, 
+#filtering out aggs and countries outside WB service
+
+List <- wb_countries %>% 
+  filter(!lending_type %in% c("Aggregates","Not classified")) %>% 
+  select(country) %>% as_vector()
+
+#For loop to create briefs
+for(i in List){
 
 #Set Country name
 country_run <- i

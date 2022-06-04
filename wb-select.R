@@ -37,9 +37,9 @@ country_iso2 <- wb_countries %>%
   as.character() %>% tolower()
 region_abbrev <- wb_countries %>% 
   filter(country == country_run) %>% 
-  select(10) %>% 
+  select(7) %>% 
   head(.,1) %>% 
-  as.character()
+  make_abbrev()
 income_abbrev <- wb_countries %>% 
   filter(country == country_run) %>% 
   select(13) %>% 
@@ -94,11 +94,11 @@ ECA <- measure_list %>% filter(number %in% c('m1','m2','m9','m10','m11','m12','m
 ECAbreaks <- c(10,11,30,31,34)
 
 #List of measures for LAC region
-LAC <- measure_list %>% filter(number %in% c('m1','m2','m7','m8','m11','m12','m13','m15','m16','m17','m18','m19,
-             m27','m28','m29','m30','m32','m33','m36','m37','m38','m39','m40','m31','m48','m44','m45','m46','m47,
-             m53','m51','m52','m54','m55',
+LAC <- measure_list %>% filter(number %in% c('m1','m2','m7','m8','m11','m12','m13','m15','m16','m17','m18','m19',
+             'm27','m28','m29','m30','m32','m33','m36','m37','m38','m39','m40','m31','m48','m44','m45','m46','m47',
+             'm53','m51','m52','m54','m55',
              'm63','m64','m65','m66','m67','m68','m69','m70','m71'))%>% select(-1) %>% as.data.frame()
-LACbreaks <- c(11,12,26,27,30)
+LACbreaks <- c(12,13,29,30,35)
 
 #List of measures for MENA region
 MENA <- measure_list %>% filter(number %in% c('m1','m2','m7','m8','m11','m12','m13','m15','m16','m17','m18','m19',
@@ -109,7 +109,7 @@ MENAbreaks <- c(12,13,29,30,34)
 
 #List of measures for SAR region
 SAR <- measure_list %>% filter(number %in% c('m1','m2','m3','m4','m12','m13','m15','m16','m17','m18','m19',
-             'm27','m28','m29','m30','m31','m32','m33','m36','m37','m40','m41','m42','m44','m45','m46','m47','m48',
+             'm27','m28','m29','m30','m31','m32','m33','m36','m37','m40','m42','m44','m45','m46','m47','m48',
              'm51','m52','m53','m55','m57','m58',
              'm63','m64','m65','m66','m67','m68','m69','m70','m71'))%>% select(-1) %>% as.data.frame()
 SARbreaks <- c(11,12,28,29,34)
