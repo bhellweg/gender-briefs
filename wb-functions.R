@@ -2,10 +2,8 @@ library(wbstats)
 library(tidyverse)
 library(formattable)
 library(knitr)
-library(sparkline)
 library(htmltools)
 library(ggplot2)
-library(maps)
 library(viridis)
 library(ggstance)
 library(MASS)
@@ -31,6 +29,7 @@ wb_baseline <- function(code){
                                  iso3c==country_abbrev&
                                  date %in% c(1990:2010)&
                                  is.na(value)==F,7]) %>%
+    na.omit() %>%
     tail(.,1) %>% 
     as.numeric() %>% 
     signif(.,digits = 3)
@@ -42,6 +41,7 @@ wb_baseyear <- function(code){
                                  iso3c==country_abbrev&
                                  date %in% c(1990:2010)&
                                  is.na(value)==F,5]) %>%
+    na.omit() %>%
     tail(.,1) %>% 
     as.numeric() %>% 
     signif(.,digits = 4)
@@ -53,6 +53,7 @@ wb_performance <- function(code){
                                  iso3c==country_abbrev&
                                  date > 2010&
                                  is.na(value)==F,7]) %>%
+    na.omit() %>%
     tail(.,1) %>% 
     as.numeric() %>% 
     signif(.,digits = 3)
@@ -64,6 +65,7 @@ wb_perfyear <- function(code){
                                  iso3c==country_abbrev&
                                  date > 2010&
                                  is.na(value)==F,5]) %>%
+    na.omit() %>%
     tail(.,1) %>% 
     as.numeric() %>% 
     signif(.,digits = 4)
@@ -76,6 +78,7 @@ wb_region <- function(code){
                                  Country == region_run&
                                  date > 2010&
                                  is.na(value)==F,7]) %>%
+    na.omit() %>%
     tail(.,1) %>% 
     as.numeric() %>% 
     signif(.,digits = 3)
@@ -88,6 +91,7 @@ wb_income <- function(code){
                                  Country == income_run&
                                  date > 2010&
                                  is.na(value)==F,7]) %>%
+    na.omit() %>%
     tail(.,1) %>% 
     as.numeric() %>% 
     signif(.,digits = 3)
@@ -100,6 +104,7 @@ wb_world <- function(code){
                                  Country == "World"&
                                  date > 2010&
                                  is.na(value)==F,7]) %>%
+    na.omit() %>%
     tail(.,1) %>% 
     as.numeric() %>% 
     signif(.,digits = 3)

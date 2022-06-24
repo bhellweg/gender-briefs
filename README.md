@@ -5,6 +5,7 @@ This project produces two page briefings for every country in the World Bank ser
 
 ## Author
 Brendan Hellweg (github.com/bhellweg)
+
 Credit to the World Bank HCI team, whose one-pager and two-pager code was useful for building the document to World Bank style.
 
 ## Files
