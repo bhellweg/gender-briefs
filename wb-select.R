@@ -79,97 +79,97 @@ FCVbreaks <- c(13,14,27,28,31)
 #IF YOU WANT TO USE THE FCV FORMAT, SWAP THE COMMENTS SO FCV AND THE FCV SUBSETS
 #ARE ACTIVE. UPDATE THEM EVERY YEAR BASED ON FCV STATUS. IF YOU WANT FCV COUNTRIES
 #TO USE REGIONAL MEASURES, MAKE THE EMPTY SUBSETS ACTIVE
-# FCV <- c(
-#   'Afghanistan',
-#   'Somalia',
-#   'Syrian Arab Republic',
-#   'Republic of Yemen',
-#   'Armenia',
-#   'Azerbaijan',
-#   'Burkina Faso',
-#   'Burundi',
-#   'Cameroon',
-#   'Central African Republic',
-#   'Chad',
-#   'Dem. Republic of the Congo',
-#   'Ethiopia',
-#   'Haiti',
-#   'Iraq',
-#   'Libya',
-#   'Mali',
-#   'Mozambique',
-#   'Myanmar',
-#   'Niger',
-#   'Nigeria',
-#   'South Sudan',
-#   'Republic of the Congo',
-#   'Eritrea',
-#   'Guinea-Bissau',
-#   'Kosovo',
-#   'Lebanon',
-#   'Papua New Guinea',
-#   'Sudan',
-#   'Bolivarian Republic of Venezuela',
-#   'Zimbabwe',
-#   'Comoros',
-#   'Kiribati',
-#   'Marshall Islands',
-#   'Fed. States of Micronesia',
-#   'Solomon Islands',
-#   'Timor-Leste',
-#   'Tuvalu'
-# )
-# 
-# 
-# FCVhi <- c('Afghanistan',
-#            'Somalia',
-#            'Syrian Arab Republic',
-#            'Republic of Yemen',
-#            'Armenia',
-#            'Azerbaijan'
-# )
-# FCVmed <- c(
-#   'Burkina Faso',
-#   'Burundi',
-#   'Cameroon',
-#   'Central African Republic',
-#   'Chad',
-#   'Dem. Republic of the Congo',
-#   'Ethiopia',
-#   'Haiti',
-#   'Iraq',
-#   'Libya',
-#   'Mali',
-#   'Mozambique',
-#   'Myanmar',
-#   'Niger',
-#   'Nigeria',
-#   'South Sudan'
-# )
-# 
-# FCVfrag <- c(
-#   'Republic of the Congo',
-#   'Eritrea',
-#   'Guinea-Bissau',
-#   'Kosovo',
-#   'Lebanon',
-#   'Papua New Guinea',
-#   'Sudan',
-#   'Bolivarian Republic of Venezuela',
-#   'Zimbabwe',
-#   'Comoros',
-#   'Kiribati',
-#   'Marshall Islands',
-#   'Fed. States of Micronesia',
-#   'Solomon Islands',
-#   'Timor-Leste',
-#   'Tuvalu'
-# )
+FCV <- c(
+  'Afghanistan',
+  'Somalia',
+  'Syrian Arab Republic',
+  'Republic of Yemen',
+  'Armenia',
+  'Azerbaijan',
+  'Burkina Faso',
+  'Burundi',
+  'Cameroon',
+  'Central African Republic',
+  'Chad',
+  'Dem. Republic of the Congo',
+  'Ethiopia',
+  'Haiti',
+  'Iraq',
+  'Libya',
+  'Mali',
+  'Mozambique',
+  'Myanmar',
+  'Niger',
+  'Nigeria',
+  'South Sudan',
+  'Republic of the Congo',
+  'Eritrea',
+  'Guinea-Bissau',
+  'Kosovo',
+  'Lebanon',
+  'Papua New Guinea',
+  'Sudan',
+  'Bolivarian Republic of Venezuela',
+  'Zimbabwe',
+  'Comoros',
+  'Kiribati',
+  'Marshall Islands',
+  'Fed. States of Micronesia',
+  'Solomon Islands',
+  'Timor-Leste',
+  'Tuvalu'
+)
 
-FCV <- c()
-FCVhi<- c()
-FCVmed<- c()
-FCVfrag<- c()
+
+FCVhi <- c('Afghanistan',
+           'Somalia',
+           'Syrian Arab Republic',
+           'Republic of Yemen',
+           'Armenia',
+           'Azerbaijan'
+)
+FCVmed <- c(
+  'Burkina Faso',
+  'Burundi',
+  'Cameroon',
+  'Central African Republic',
+  'Chad',
+  'Dem. Republic of the Congo',
+  'Ethiopia',
+  'Haiti',
+  'Iraq',
+  'Libya',
+  'Mali',
+  'Mozambique',
+  'Myanmar',
+  'Niger',
+  'Nigeria',
+  'South Sudan'
+)
+
+FCVfrag <- c(
+  'Republic of the Congo',
+  'Eritrea',
+  'Guinea-Bissau',
+  'Kosovo',
+  'Lebanon',
+  'Papua New Guinea',
+  'Sudan',
+  'Bolivarian Republic of Venezuela',
+  'Zimbabwe',
+  'Comoros',
+  'Kiribati',
+  'Marshall Islands',
+  'Fed. States of Micronesia',
+  'Solomon Islands',
+  'Timor-Leste',
+  'Tuvalu'
+)
+
+# FCV <- c()
+# FCVhi<- c()
+# FCVmed<- c()
+# FCVfrag<- c()
 
 #Define measures based on region_run value
 measures <- 

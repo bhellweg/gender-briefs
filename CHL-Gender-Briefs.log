@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.6.24)  24 JUN 2022 14:36
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.6.24)  24 JUN 2022 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1163,10 +1163,10 @@ Overfull \hbox (2.68054pt too wide) in alignment at lines 132--135
  [] [] [] [] [] [] [] [] [] [] 
  []
 
-File: icon/naicon.png Graphic file (type bmp)
-<icon/naicon.png>
-File: icon/naicon.png Graphic file (type bmp)
-<icon/naicon.png>
+File: icon/righticon.png Graphic file (type bmp)
+<icon/righticon.png>
+File: icon/righticon.png Graphic file (type bmp)
+<icon/righticon.png>
 File: icon/upicon.png Graphic file (type bmp)
 <icon/upicon.png>
 File: icon/upicon.png Graphic file (type bmp)
@@ -1431,7 +1431,7 @@ Package rerunfilecheck Info: File `CHL-Gender-Briefs.out' has not changed.
 Here is how much of TeX's memory you used:
  33018 strings out of 477881
  653817 string characters out of 5845839
- 1130568 words of memory out of 5000000
+ 1130629 words of memory out of 5000000
  53344 multiletter control sequences out of 15000+600000
  708946 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191

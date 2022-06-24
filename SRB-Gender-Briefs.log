@@ -1,0 +1,1443 @@
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.6.24)  24 JUN 2022 16:53
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Briefs/SRB-Gender-Briefs.tex
+(./Briefs/SRB-Gender-Briefs.tex
+LaTeX2e <2022-06-01> patch level 2
+L3 programming layer <2022-06-16> (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count181
+\c@section=\count182
+\c@subsection=\count183
+\c@subsubsection=\count184
+\c@paragraph=\count185
+\c@subparagraph=\count186
+\c@figure=\count187
+\c@table=\count188
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip49
+For additional information on amsmath, use the `?' option.
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen139
+)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count189
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count190
+\leftroot@=\count191
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count192
+\DOTSCASE@=\count193
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count194
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count195
+\dotsspace@=\muskip16
+\c@parentequation=\count196
+\dspbrk@lvl=\count197
+\tag@help=\toks17
+\row@=\count198
+\column@=\count199
+\maxfields@=\count266
+\andhelp@=\toks18
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks19
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-06-16 L3 programming layer (loader) 
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2022-04-20 L3 backend support: XeTeX
+\g__graphics_track_int=\count267
+\l__pdf_internal_box=\box53
+\g__pdf_backend_object_int=\count268
+\g__pdf_backend_annotation_int=\count269
+\g__pdf_backend_link_int=\count270
+))
+Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+Package: unicode-math-xetex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2022-06-22 L3 Experimental document command parser
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2022-06-22 LaTeX2e option processing using LaTeX3 keys
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count271
+\l__fontspec_language_int=\count272
+\l__fontspec_strnum_int=\count273
+\l__fontspec_tmp_int=\count274
+\l__fontspec_tmpa_int=\count275
+\l__fontspec_tmpb_int=\count276
+\l__fontspec_tmpc_int=\count277
+\l__fontspec_em_int=\count278
+\l__fontspec_emdef_int=\count279
+\l__fontspec_strong_int=\count280
+\l__fontspec_strongdef_int=\count281
+\l__fontspec_tmpa_dim=\dimen148
+\l__fontspec_tmpb_dim=\dimen149
+\l__fontspec_tmpc_dim=\dimen150
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+\g__um_fam_int=\count282
+\g__um_fonts_used_int=\count283
+\l__um_primecount_int=\count284
+\g__um_primekern_muskip=\muskip17
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 227.
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/04/16 v5.0m Graphics/color driver for xetex
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count285
+)
+\@linkdim=\dimen151
+\Hy@linkcounter=\count286
+\Hy@pagecounter=\count287
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-06-20 v7.00s Hyperref: PDFDocEncoding definition (HO)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count288
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4045.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4408.
+\c@Hy@tempcnt=\count289
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4746.
+\XeTeXLinkMargin=\dimen152
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count290
+\Field@Width=\dimen153
+\Fld@charsize=\dimen154
+Package hyperref Info: Hyper figures OFF on input line 6024.
+Package hyperref Info: Link nesting OFF on input line 6029.
+Package hyperref Info: Hyper index ON on input line 6032.
+Package hyperref Info: backreferencing OFF on input line 6039.
+Package hyperref Info: Link coloring OFF on input line 6044.
+Package hyperref Info: Link coloring with OCG OFF on input line 6049.
+Package hyperref Info: PDF/A mode OFF on input line 6054.
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count291
+\c@Item=\count292
+\c@Hfootnote=\count293
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2022-06-20 v7.00s Hyperref driver for XeTeX
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\pdfm@box=\box54
+\c@Hy@AnnotLevel=\count294
+\HyField@AnnotCount=\count295
+\Fld@listcount=\count296
+\c@bookmark@seq@number=\count297
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
+\Hy@SectionHShift=\skip52
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count298
+\Gm@cntv=\count299
+\c@Gm@tempcnt=\count300
+\Gm@bindingoffset=\dimen155
+\Gm@wd@mp=\dimen156
+\Gm@odd@mp=\dimen157
+\Gm@even@mp=\dimen158
+\Gm@layoutwidth=\dimen159
+\Gm@layoutheight=\dimen160
+\Gm@layouthoffset=\dimen161
+\Gm@layoutvoffset=\dimen162
+\Gm@dimlist=\toks22
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+)
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and footers
+\f@nch@headwidth=\skip53
+\f@nch@O@elh=\skip54
+\f@nch@O@erh=\skip55
+\f@nch@O@olh=\skip56
+\f@nch@O@orh=\skip57
+\f@nch@O@elf=\skip58
+\f@nch@O@erf=\skip59
+\f@nch@O@olf=\skip60
+\f@nch@O@orf=\skip61
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box55
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen165
+\lightrulewidth=\dimen166
+\cmidrulewidth=\dimen167
+\belowrulesep=\dimen168
+\belowbottomsep=\dimen169
+\aboverulesep=\dimen170
+\abovetopsep=\dimen171
+\cmidrulesep=\dimen172
+\cmidrulekern=\dimen173
+\defaultaddspace=\dimen174
+\@cmidla=\count301
+\@cmidlb=\count302
+\@aboverulesep=\dimen175
+\@belowrulesep=\dimen176
+\@thisruleclass=\count303
+\@lastruleclass=\count304
+\@thisrulewidth=\dimen177
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/montserrat/montserrat.sty
+Package: montserrat 2019/11/07 v1.03
+`montserrat' v1.03, 2019/11/07 Style file for Montserrat and Alternates (msharpe) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ly1/ly1enc.def
+File: ly1enc.def 2022/06/11 v0.8 TeX 'n ANSI encoding (DPC/KB)
+)
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 112.
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
+)
+\XKV@depth=\count305
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrextend.sty
+Package: scrextend 2022/05/01 v3.36 KOMA-Script package (extend other classes with features of KOMA-Script classes)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2022/05/01 v3.36 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2022/05/01 v3.36 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2022/05/01 v3.36 KOMA-Script package (file load hooks)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2022/05/01 v3.36 KOMA-Script package (using LaTeX hooks)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2022/05/01 v3.36 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line 368.
+))
+
+LaTeX Warning: Command \@footnotemark  has changed.
+               Check if current package is valid.
+
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count306
+\float@exts=\toks25
+\float@box=\box56
+\@float@everytoks=\toks26
+\@floatcapt=\box57
+)
+\@float@every@table=\toks27
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
+\c@tracingmulticols=\count307
+\mult@box=\box58
+\multicol@leftmargin=\dimen178
+\c@unbalance=\count308
+\c@collectmore=\count309
+\doublecol@number=\count310
+\multicoltolerance=\count311
+\multicolpretolerance=\count312
+\full@width=\dimen179
+\page@free=\dimen180
+\premulticols=\dimen181
+\postmulticols=\dimen182
+\multicolsep=\skip62
+\multicolbaselineskip=\skip63
+\partial@page=\box59
+\last@line=\box60
+\maxbalancingoverflow=\dimen183
+\mult@rightbox=\box61
+\mult@grightbox=\box62
+\mult@firstbox=\box63
+\mult@gfirstbox=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\c@minrows=\count313
+\c@columnbadness=\count314
+\c@finalcolumnbadness=\count315
+\last@try=\dimen184
+\multicolovershoot=\dimen185
+\multicolundershoot=\dimen186
+\mult@nat@firstbox=\box101
+\colbreak@box=\box102
+\mc@col@check@num=\count316
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
+\pltopsep=\skip64
+\plpartopsep=\skip65
+\plitemsep=\skip66
+\plparsep=\skip67
+\pl@lab=\toks28
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen187
+\captionmargin=\dimen188
+\caption@leftmargin=\dimen189
+\caption@rightmargin=\dimen190
+\caption@width=\dimen191
+\caption@indent=\dimen192
+\caption@parindent=\dimen193
+\caption@hangindent=\dimen194
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count317
+\c@continuedfloat=\count318
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count319
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2022-04-07 v2.34 Module abspage for zref (HO)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2022-04-07 v2.34 Module base for zref (HO)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count320
+Package zref Info: New property: abspage on input line 65.
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip68
+\c@mdf@globalstyle@cnt=\count321
+\mdf@skipabove@length=\skip69
+\mdf@skipbelow@length=\skip70
+\mdf@leftmargin@length=\skip71
+\mdf@rightmargin@length=\skip72
+\mdf@innerleftmargin@length=\skip73
+\mdf@innerrightmargin@length=\skip74
+\mdf@innertopmargin@length=\skip75
+\mdf@innerbottommargin@length=\skip76
+\mdf@splittopskip@length=\skip77
+\mdf@splitbottomskip@length=\skip78
+\mdf@outermargin@length=\skip79
+\mdf@innermargin@length=\skip80
+\mdf@linewidth@length=\skip81
+\mdf@innerlinewidth@length=\skip82
+\mdf@middlelinewidth@length=\skip83
+\mdf@outerlinewidth@length=\skip84
+\mdf@roundcorner@length=\skip85
+\mdf@footenotedistance@length=\skip86
+\mdf@userdefinedwidth@length=\skip87
+\mdf@needspace@length=\skip88
+\mdf@frametitleaboveskip@length=\skip89
+\mdf@frametitlebelowskip@length=\skip90
+\mdf@frametitlerulewidth@length=\skip91
+\mdf@frametitleleftmargin@length=\skip92
+\mdf@frametitlerightmargin@length=\skip93
+\mdf@shadowsize@length=\skip94
+\mdf@extratopheight@length=\skip95
+\mdf@subtitleabovelinewidth@length=\skip96
+\mdf@subtitlebelowlinewidth@length=\skip97
+\mdf@subtitleaboveskip@length=\skip98
+\mdf@subtitlebelowskip@length=\skip99
+\mdf@subtitleinneraboveskip@length=\skip100
+\mdf@subtitleinnerbelowskip@length=\skip101
+\mdf@subsubtitleabovelinewidth@length=\skip102
+\mdf@subsubtitlebelowlinewidth@length=\skip103
+\mdf@subsubtitleaboveskip@length=\skip104
+\mdf@subsubtitlebelowskip@length=\skip105
+\mdf@subsubtitleinneraboveskip@length=\skip106
+\mdf@subsubtitleinnerbelowskip@length=\skip107
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen195
+\pgfutil@tempdimb=\dimen196
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box103
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen197
+\pgf@y=\dimen198
+\pgf@xa=\dimen199
+\pgf@ya=\dimen256
+\pgf@xb=\dimen257
+\pgf@yb=\dimen258
+\pgf@xc=\dimen259
+\pgf@yc=\dimen260
+\pgf@xd=\dimen261
+\pgf@yd=\dimen262
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count322
+\c@pgf@countb=\count323
+\c@pgf@countc=\count324
+\c@pgf@countd=\count325
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count326
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-xetex.def
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)
+\pgfsys@objnum=\count327
+))) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count328
+\pgfsyssoftpath@bigbuffer@items=\count329
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen263
+\pgfmath@count=\count330
+\pgfmath@box=\box104
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count331
+)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen264
+\pgf@picmaxx=\dimen265
+\pgf@picminy=\dimen266
+\pgf@picmaxy=\dimen267
+\pgf@pathminx=\dimen268
+\pgf@pathmaxx=\dimen269
+\pgf@pathminy=\dimen270
+\pgf@pathmaxy=\dimen271
+\pgf@xx=\dimen272
+\pgf@xy=\dimen273
+\pgf@yx=\dimen274
+\pgf@yy=\dimen275
+\pgf@zx=\dimen276
+\pgf@zy=\dimen277
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen278
+\pgf@path@lasty=\dimen279
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen280
+\pgf@shorten@start@additional=\dimen281
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box105
+\pgf@hbox=\box106
+\pgf@layerbox@main=\box107
+\pgf@picture@serial@count=\count332
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen282
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen283
+\pgf@pt@y=\dimen284
+\pgf@pt@temp=\dimen285
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen286
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen287
+\pgf@sys@shading@range@num=\count333
+\pgf@shadingcount=\count334
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box108
+)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box109
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen288
+\pgf@nodesepend=\dimen289
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen290
+\pgffor@skip=\dimen291
+\pgffor@stack=\toks39
+\pgffor@toks=\toks40
+)) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count335
+\pgfplotmarksize=\dimen292
+)
+\tikz@lastx=\dimen293
+\tikz@lasty=\dimen294
+\tikz@lastxsaved=\dimen295
+\tikz@lastysaved=\dimen296
+\tikz@lastmovetox=\dimen297
+\tikz@lastmovetoy=\dimen298
+\tikzleveldistance=\dimen299
+\tikzsiblingdistance=\dimen300
+\tikz@figbox=\box110
+\tikz@figbox@bg=\box111
+\tikz@tempbox=\box112
+\tikz@tempbox@bg=\box113
+\tikztreelevel=\count336
+\tikznumberofchildren=\count337
+\tikznumberofcurrentchild=\count338
+\tikz@fig@count=\count339
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count340
+\pgfmatrixcurrentcolumn=\count341
+\pgf@matrix@numberofcolumns=\count342
+)
+\tikz@expandcount=\count343
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
+File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
+)
+\mdf@frametitlebox=\box114
+\mdf@footnotebox=\box115
+\mdf@splitbox@one=\box116
+\mdf@splitbox@two=\box117
+\mdf@splitbox@save=\box118
+\mdfsplitboxwidth=\skip108
+\mdfsplitboxtotalwidth=\skip109
+\mdfsplitboxheight=\skip110
+\mdfsplitboxdepth=\skip111
+\mdfsplitboxtotalheight=\skip112
+\mdfframetitleboxwidth=\skip113
+\mdfframetitleboxtotalwidth=\skip114
+\mdfframetitleboxheight=\skip115
+\mdfframetitleboxdepth=\skip116
+\mdfframetitleboxtotalheight=\skip117
+\mdffootnoteboxwidth=\skip118
+\mdffootnoteboxtotalwidth=\skip119
+\mdffootnoteboxheight=\skip120
+\mdffootnoteboxdepth=\skip121
+\mdffootnoteboxtotalheight=\skip122
+\mdftotallinewidth=\skip123
+\mdfboundingboxwidth=\skip124
+\mdfboundingboxtotalwidth=\skip125
+\mdfboundingboxheight=\skip126
+\mdfboundingboxdepth=\skip127
+\mdfboundingboxtotalheight=\skip128
+\mdf@freevspace@length=\skip129
+\mdf@horizontalwidthofbox@length=\skip130
+\mdf@verticalmarginwhole@length=\skip131
+\mdf@horizontalspaceofbox=\skip132
+\mdfsubtitleheight=\skip133
+\mdfsubsubtitleheight=\skip134
+\c@mdfcountframes=\count344
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count345
+\c@mdf@env@i=\count346
+\c@mdf@env@ii=\count347
+\c@mdf@zref@counter=\count348
+Package zref Info: New property: mdf@pagevalue on input line 895.
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip135
+\LTright=\skip136
+\LTpre=\skip137
+\LTpost=\skip138
+\LTchunksize=\count349
+\LTcapwidth=\dimen301
+\LT@head=\box119
+\LT@firsthead=\box120
+\LT@foot=\box121
+\LT@lastfoot=\box122
+\LT@gbox=\box123
+\LT@cols=\count350
+\LT@rows=\count351
+\c@LT@tables=\count352
+\c@LT@chunks=\count353
+\LT@p@ftn=\toks41
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen302
+\ar@mcellbox=\box124
+\extrarowheight=\dimen303
+\NC@list=\toks42
+\extratabsurround=\skip139
+\backup@length=\skip140
+\ar@cellbox=\box125
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip141
+\multirow@cntb=\count354
+\multirow@dima=\skip142
+\bigstrutjot=\dimen304
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen305
+\WF@size=\dimen306
+\c@WF@wrappedlines=\count355
+\WF@box=\box126
+\WF@everypar=\toks43
+Package: wrapfig 2003/01/31  v 3.6
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks44
+\minrowclearance=\skip143
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box127
+\sift@deathcycles=\count356
+\@vwid@loff=\dimen307
+\@vwid@roff=\dimen308
+)
+\c@taburow=\count357
+\tabu@nbcols=\count358
+\tabu@cnt=\count359
+\tabu@Xcol=\count360
+\tabu@alloc=\count361
+\tabu@nested=\count362
+\tabu@target=\dimen309
+\tabu@spreadtarget=\dimen310
+\tabu@naturalX=\dimen311
+\tabucolX=\dimen312
+\tabu@Xsum=\dimen313
+\extrarowdepth=\dimen314
+\abovetabulinesep=\dimen315
+\belowtabulinesep=\dimen316
+\tabustrutrule=\dimen317
+\tabu@thebody=\toks45
+\tabu@footnotes=\toks46
+\tabu@box=\box128
+\tabu@arstrutbox=\box129
+\tabu@hleads=\box130
+\tabu@vleads=\box131
+\tabu@cellskip=\skip144
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box132
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/threeparttablex.sty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\TPTL@width=\skip145
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box133
+\UL@hyphenbox=\box134
+\UL@skip=\skip146
+\UL@hook=\toks47
+\UL@height=\dimen318
+\UL@pe=\count363
+\UL@pixel=\dimen319
+\ULC@box=\box135
+Package: ulem 2019/11/18
+\ULdepth=\dimen320
+) (c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen321
+\c@nlinenum=\count364
+\TeXr@lab=\toks48
+)
+LaTeX Font Info:    Trying to load font information for T1+Montserrat-TLF on input line 82.
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/montserrat/T1Montserrat-TLF.fd
+File: T1Montserrat-TLF.fd 2019/11/07 (autoinst) Font definitions for T1/Montserrat-TLF.
+)
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 82.
+(./SRB-Gender-Briefs.aux)
+\openout1 = `SRB-Gender-Briefs.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 82.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 82.
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ly1/ly1ptm.fd
+File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
+)
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/lmr/regular/n on input line 82.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/lmr/regular/it on input line 82.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bold/n on input line 82.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> TU/Montserrat-TLF/regular/n on input line 82.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> TU/Montserrat-TLF/bold/n on input line 82.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/regular/n on input line 82.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bold/n on input line 82.
+
+Package fontspec Info: latinmodern-math scale = 1.220410764308379.
+
+
+Package fontspec Info: latinmodern-math scale = 1.220410764308379.
+
+
+Package fontspec Info: latinmodern-math scale = 1.220410764308379.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (regular/n) with NFSS spec.:
+(fontspec)             <->s*[1.220410764308379]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             - 'small caps'  (regular/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.220410764308379]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Trying to load font information for T1+latinmodern-math.otf(0) on input line 82.
+LaTeX Font Info:    No file T1latinmodern-math.otf(0).fd. on input line 82.
+
+LaTeX Font Warning: Font shape `T1/latinmodern-math.otf(0)/regular/n' undefined
+(Font)              using `T1/cmr/m/n' instead on input line 82.
+
+
+Package unicode-math Warning: The first font loaded by unicode-math must be an
+(unicode-math)                OpenType Math font (with script=math). If you
+(unicode-math)                simply want ‘the default’ before loading
+(unicode-math)                supplementary fonts over the top for certain
+(unicode-math)                ranges, use: 
+(unicode-math)                  \setmathfont{latinmodern-math.otf}
+
+
+Package fontspec Info: latinmodern-math scale = 1.220410764308379.
+
+
+Package fontspec Info: latinmodern-math scale = 1.220410764308379.
+
+
+Package fontspec Info: latinmodern-math scale = 1.220410764308379.
+
+
+Package fontspec Info: latinmodern-math scale = 1.220410764308379.
+
+
+Package fontspec Info: latinmodern-math scale = 1.220410764308379.
+
+
+Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=0-},{Size=0-0,Font=latinmodern-math.otf,Style=MathScript},{Size=-0,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (regular/n) with NFSS spec.:
+(fontspec)             <0->s*[1.220410764308379]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<0-0>s*[1.220410764308379]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-0>s*[1.220410764308379]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'small caps'  (regular/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.220410764308379]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Trying to load font information for T1+latinmodern-math.otf(1) on input line 82.
+LaTeX Font Info:    No file T1latinmodern-math.otf(1).fd. on input line 82.
+
+LaTeX Font Warning: Font shape `T1/latinmodern-math.otf(1)/regular/n' undefined
+(Font)              using `T1/cmr/m/n' instead on input line 82.
+
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 82.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> T1/latinmodern-math.otf(1)/regular/n on input line 82.
+LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 82.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> T1/latinmodern-math.otf(1)/b/n on input line 82.
+Package hyperref Info: Link coloring OFF on input line 82.
+(./SRB-Gender-Briefs.out) (./SRB-Gender-Briefs.out)
+\@outlinefile=\write4
+\openout4 = `SRB-Gender-Briefs.out'.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
+* v-part:(T,H,B)=(51.21504pt, 715.3022pt, 28.45274pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=557.38951pt
+* \textheight=715.3022pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-58.05495pt
+* \headheight=12.0pt
+* \headsep=14.22636pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=7.19998pt plus 3.19965pt minus 1.60033pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 88.
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 88.
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 88.
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 88.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 88.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 88.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
+(c:/Users/brend/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
+(Font)              scaled to size 8.0pt on input line 90.
+File: icon/upicon.png Graphic file (type bmp)
+<icon/upicon.png>
+File: icon/righticon.png Graphic file (type bmp)
+<icon/righticon.png>
+File: icon/downicon.png Graphic file (type bmp)
+<icon/downicon.png>
+File: icon/naicon.png Graphic file (type bmp)
+<icon/naicon.png>
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
+(Font)              scaled to size 9.0pt on input line 101.
+File: icon/pointer.png Graphic file (type bmp)
+<icon/pointer.png>
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 104.
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
+(Font)              scaled to size 7.5pt on input line 108.
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
+(Font)              scaled to size 7.5pt on input line 119.
+
+Overfull \hbox (2.89809pt too wide) in alignment at lines 117--125
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/it' will be
+(Font)              scaled to size 7.5pt on input line 126.
+
+Overfull \hbox (2.89809pt too wide) in alignment at lines 125--130
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.89809pt too wide) in alignment at lines 130--132
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 134.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.5> on input line 134.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.24997> on input line 134.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <3.75> on input line 134.
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
+(Font)              scaled to size 5.24997pt on input line 134.
+
+Overfull \hbox (2.89809pt too wide) in alignment at lines 132--135
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+File: icon/righticon.png Graphic file (type bmp)
+<icon/righticon.png>
+File: icon/righticon.png Graphic file (type bmp)
+<icon/righticon.png>
+File: icon/upicon.png Graphic file (type bmp)
+<icon/upicon.png>
+File: icon/upicon.png Graphic file (type bmp)
+<icon/upicon.png>
+File: icon/righticon.png Graphic file (type bmp)
+<icon/righticon.png>
+File: icon/righticon.png Graphic file (type bmp)
+<icon/righticon.png>
+File: icon/downicon.png Graphic file (type bmp)
+<icon/downicon.png>
+File: icon/righticon.png Graphic file (type bmp)
+<icon/righticon.png>
+File: icon/downicon.png Graphic file (type bmp)
+<icon/downicon.png>
+File: icon/righticon.png Graphic file (type bmp)
+<icon/righticon.png>
+File: icon/upicon.png Graphic file (type bmp)
+<icon/upicon.png>
+File: icon/upicon.png Graphic file (type bmp)
+<icon/upicon.png>
+File: icon/righticon.png Graphic file (type bmp)
+<icon/righticon.png>
+File: icon/righticon.png Graphic file (type bmp)
+<icon/righticon.png>
+File: icon/downicon.png Graphic file (type bmp)
+<icon/downicon.png>
+File: icon/downicon.png Graphic file (type bmp)
+<icon/downicon.png>
+File: icon/downicon.png Graphic file (type bmp)
+<icon/downicon.png>
+File: icon/downicon.png Graphic file (type bmp)
+<icon/downicon.png>
+File: icon/naicon.png Graphic file (type bmp)
+<icon/naicon.png>
+File: icon/naicon.png Graphic file (type bmp)
+<icon/naicon.png>
+File: icon/naicon.png Graphic file (type bmp)
+<icon/naicon.png>
+File: icon/naicon.png Graphic file (type bmp)
+<icon/naicon.png>
+File: icon/upicon.png Graphic file (type bmp)
+<icon/upicon.png>
+File: icon/righticon.png Graphic file (type bmp)
+<icon/righticon.png>
+File: icon/naicon.png Graphic file (type bmp)
+<icon/naicon.png>
+File: icon/naicon.png Graphic file (type bmp)
+<icon/naicon.png>
+File: icon/naicon.png Graphic file (type bmp)
+<icon/naicon.png>
+File: icon/naicon.png Graphic file (type bmp)
+<icon/naicon.png>
+File: icon/downicon.png Graphic file (type bmp)
+<icon/downicon.png>
+File: icon/righticon.png Graphic file (type bmp)
+<icon/righticon.png>
+File: icon/upicon.png Graphic file (type bmp)
+<icon/upicon.png>
+File: icon/upicon.png Graphic file (type bmp)
+<icon/upicon.png>
+File: icon/righticon.png Graphic file (type bmp)
+<icon/righticon.png>
+File: icon/naicon.png Graphic file (type bmp)
+<icon/naicon.png>
+
+Overfull \hbox (2.89809pt too wide) in alignment at lines 135--209
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 213.
+File: pdf/rs.pdf Graphic file (type pdf)
+<use pdf/rs.pdf>
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
+(Font)              scaled to size 22.0pt on input line 213.
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
+(Font)              scaled to size 22.0pt on input line 213.
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/sl' in size <10> not available
+(Font)              Font shape `T1/Montserrat-TLF/regular/it' tried instead on input line 213.
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/it' will be
+(Font)              scaled to size 10.0pt on input line 213.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.3766pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.3766pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.3766pt}.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/regular/n' undefined
+(Font)              using `T1/lmr/m/n' instead on input line 213.
+
+File: icon/footer.png Graphic file (type bmp)
+<icon/footer.png>
+
+Overfull \hbox (28.46376pt too wide) has occurred while \output is active
+ [][]|
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 38.31592pt, for example:
+(fancyhdr)                \setlength{\footskip}{38.31592pt}.
+
+[1
+
+]
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
+(Font)              scaled to size 14.0pt on input line 230.
+
+Underfull \hbox (badness 4441) in paragraph at lines 230--230
+[]\T1/Montserrat-TLF/regular/n/14 Women, Busi-ness and
+ []
+
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
+(Font)              scaled to size 9.0pt on input line 230.
+
+Underfull \hbox (badness 1215) in paragraph at lines 230--230
+[]$[]$ \T1/Montserrat-TLF/regular/n/9 presents an in-dex cov-er-ing 190
+ []
+
+
+Overfull \hbox (4.23921pt too wide) in paragraph at lines 230--231
+[][][][]  
+ []
+
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 233.
+
+File: icon/overall.png Graphic file (type bmp)
+<icon/overall.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 245.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 246.
+
+File: icon/mobility.png Graphic file (type bmp)
+<icon/mobility.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 258.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 259.
+
+File: icon/workplace.png Graphic file (type bmp)
+<icon/workplace.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 271.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 272.
+
+File: icon/pay.png Graphic file (type bmp)
+<icon/pay.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 284.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 285.
+
+File: icon/marriage.png Graphic file (type bmp)
+<icon/marriage.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 297.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 298.
+
+File: icon/parenthood.png Graphic file (type bmp)
+<icon/parenthood.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 312.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 313.
+
+File: icon/entrepreneur.png Graphic file (type bmp)
+<icon/entrepreneur.png>
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/regular/n' will be
+(Font)              scaled to size 15.0pt on input line 324.
+
+Overfull \hbox (1.49995pt too wide) in paragraph at lines 326--326
+ [][][]\T1/Montserrat-TLF/regular/n/15 100[] 
+ []
+
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 328.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 329.
+
+File: icon/assets.png Graphic file (type bmp)
+<icon/assets.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 343.
+
+Package mdframed Warning: Value `True' is not supported by
+(mdframed)                option `nobreak' on input line 344.
+
+File: icon/pension.png Graphic file (type bmp)
+<icon/pension.png>
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 358.
+File: rdata/HCIplot.png Graphic file (type bmp)
+<rdata/HCIplot.png>
+File: rdata/LFPplot.png Graphic file (type bmp)
+<rdata/LFPplot.png>
+LaTeX Font Info:    Font shape `T1/Montserrat-TLF/bold/n' will be
+(Font)              scaled to size 10.0pt on input line 390.
+
+Underfull \hbox (badness 7273) in paragraph at lines 474--474
+[]$[]$\T1/Montserrat-TLF/regular/n/9 : This por-tal in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+[]$[]$\T1/Montserrat-TLF/regular/n/9 :
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 489--489
+[]$[]$\T1/Montserrat-TLF/regular/n/9 : This open data
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 489--489
+[]$[]$\T1/Montserrat-TLF/regular/n/9 : This page fea-tures pol-icy re-
+ []
+
+
+Package hyperref Warning: Suppressing empty link on input line 489.
+
+File: pdf/rs.pdf Graphic file (type pdf)
+<use pdf/rs.pdf>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.3766pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.3766pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-10.3766pt}.
+
+File: icon/footer.png Graphic file (type bmp)
+<icon/footer.png>
+
+Overfull \hbox (28.46376pt too wide) has occurred while \output is active
+ [][]|
+ []
+
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 38.31592pt, for example:
+(fancyhdr)                \setlength{\footskip}{38.31592pt}.
+
+[2
+
+] (./SRB-Gender-Briefs.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package rerunfilecheck Info: File `SRB-Gender-Briefs.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
+Here is how much of TeX's memory you used:
+ 33018 strings out of 477881
+ 653817 string characters out of 5845839
+ 1130580 words of memory out of 5000000
+ 53344 multiletter control sequences out of 15000+600000
+ 708946 words of font info for 88 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 110i,15n,120p,1978b,1115s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on SRB-Gender-Briefs.pdf (2 pages).
