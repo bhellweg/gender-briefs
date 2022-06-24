@@ -10,7 +10,7 @@ source('wb-functions.R')
 
 List <- wb_countries %>% 
   filter(!lending_type %in% c("Aggregates","Not classified")) %>% 
-  select(country) %>% as_vector()
+  dplyr::select(country) %>% as_vector() 
 
 #For loop to create briefs
 for(i in List){
@@ -32,4 +32,3 @@ xfun::Rscript_call(
        "pdf_document",encoding="UTF-8")
                     )
 }
-
