@@ -43,7 +43,7 @@ library(ggstance)
   #SIDE, REMOVE THE COMMENT AND TABLE LINKS WILL GO TO THE SPECIFIC COUNTRY. 
   #UPDATE THE FUNCTION WITH THE NEW LINK TYPE IN WB-FUNCTIONS
   #  fulltable$link <- mapply(FUN = link_completer,fulltable$link,fulltable$Rating)
-  save(fulltable, file = "fulltable.RData")}
+  save(fulltable, file = "rdata/fulltable.RData")}
 
 ## Produce main table
 
@@ -92,4 +92,4 @@ if(region_abbrev %in% c('AFR','EAP','ECA','LAC','MNA','SAS')&&
 
 #Remove the replacement indicators from the final table.
 wb_table <- wb_table %>% head(.,nrow(wb_table)-5) %>% as.data.frame()
-save(wb_table, file = "wb_table.RData")
+save(wb_table, file = "rdata/wb_table.RData")

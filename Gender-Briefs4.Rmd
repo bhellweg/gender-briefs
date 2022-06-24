@@ -58,29 +58,29 @@ library(maps)
 library(viridis)
 library(htmltools)
 
-load("wb_table.RData")
-load("fulltable.RData")
-load("breaks.RData")
-load("link.RData")
-load("FCVsentence.RData")
-load("HCI.RData")
-load("country_abbrev.RData")
-load("country_iso2.RData")
-load("income_abbrev.RData")
-load("region_abbrev.RData")
-load("region_run.RData")
-load("income_run.RData")
-load("country_run.RData")
-load("count_region.RData")
-load("count_income.RData")
-load('incomerange.RData')
-load('wbl_mean.RData')
-load("fact1.RData")
-load("fact2.RData")
-load("fact3.RData")
-load("fact4.RData")
-load("fact5.RData")
-load("link1.RData")
+load("rdata/wb_table.RData")
+load("rdata/fulltable.RData")
+load("rdata/breaks.RData")
+load("rdata/link.RData")
+load("rdata/FCVsentence.RData")
+load("rdata/HCI.RData")
+load("rdata/country_abbrev.RData")
+load("rdata/country_iso2.RData")
+load("rdata/income_abbrev.RData")
+load("rdata/region_abbrev.RData")
+load("rdata/region_run.RData")
+load("rdata/income_run.RData")
+load("rdata/country_run.RData")
+load("rdata/count_region.RData")
+load("rdata/count_income.RData")
+load('rdata/incomerange.RData')
+load('rdata/wbl_mean.RData')
+load("rdata/fact1.RData")
+load("rdata/fact2.RData")
+load("rdata/fact3.RData")
+load("rdata/fact4.RData")
+load("rdata/fact5.RData")
+load("rdata/link1.RData")
 
 region_rmd <- gsub("&","and",region_run)
 
@@ -334,8 +334,8 @@ Despite some progress, gender gaps, gender-based violence, and disadvantageous s
 
 ```{=tex}
 \begin{minipage}[t][4.7cm][t]{19.5cm}
-\href{https://genderdata.worldbank.org/indicators/hd-hci-ovrl}{\includegraphics[height=4.7cm]{HCIplot.png}}\hspace{.2cm}
-\href{https://genderdata.worldbank.org/indicators/sl-tlf-acti-zs/}{\includegraphics[height=4.7cm]{LFPplot.png}}  
+\href{https://genderdata.worldbank.org/indicators/hd-hci-ovrl}{\includegraphics[height=4.7cm]{rdata/HCIplot.png}}\hspace{.2cm}
+\href{https://genderdata.worldbank.org/indicators/sl-tlf-acti-zs/}{\includegraphics[height=4.7cm]{rdata/LFPplot.png}}  
 \end{minipage}
 ```
 \vspace{.2cm}

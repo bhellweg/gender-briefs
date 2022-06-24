@@ -56,7 +56,7 @@ HCIaggs$Country[2] <- income_abbrev}else{
 #Bind country and region/income data together
 HCI <- HCIaggs  %>% 
   pivot_longer(.,5:6)
-save(HCI,file = "HCI.RData")
+save(HCI,file = "rdata/HCI.RData")
 
 HCIbaseaggs <- rbind(HCIbaseline %>% 
                    filter(region == region_run) %>% 
@@ -124,7 +124,7 @@ HCIplot <-
                )+ylim(0,1)
 
 #Save HCI plot
-ggsave("HCIplot.png",HCIplot,height = 4500/2.5,width=6400/2.5,units = "px")
+ggsave("rdata/HCIplot.png",HCIplot,height = 4500/2.5,width=6400/2.5,units = "px")
 
 
 # LFP Second Plot
@@ -184,7 +184,7 @@ LFPplot <- ggplot_gtable(ggplot_build(LFPplot))
 LFPplot$layout$clip[LFPplot$layout$name == "panel"] <- "off"
 #grid::grid.draw(LFPplot)
 
-ggsave("LFPplot.png",LFPplot,height = 4500/2.5,width=4800,units = "px")
+ggsave("rdata/LFPplot.png",LFPplot,height = 4500/2.5,width=4800,units = "px")
 
 ## Create links for the resources line at the end of the document
 
@@ -197,7 +197,7 @@ link <- if(region_run=="Sub-Saharan Africa"){c('https://www.worldbank.org/en/pro
           if(region_run=="South Asia"){c('https://www.worldbank.org/en/programs/world-bank-south-asia-region-gender-innovation-lab','SAS Gender Innovation Lab')}else{
             c('https://www.worldbank.org/en/topic/fragilityconflictviolence/overview#1',"Fragility, Conflict and Violence Page")
           }}}}}}
-save(link, file = "link.RData")
+save(link, file = "rdata/link.RData")
 
 #LAC scorecards link logic. Change the links as they are updated.
 scorecardlink <- NULL
@@ -240,4 +240,4 @@ link1 <- if(!is.null(scorecardlink)){
       c('',
         '',
         '')}
-save(link1, file = "link1.RData")
+save(link1, file = "rdata/link1.RData")

@@ -49,15 +49,15 @@ count_income <- wb_countries %>%
   nrow() %>% 
 as.character()
 
-save(region_abbrev,file = "region_abbrev.RData")
-save(income_abbrev,file = "income_abbrev.RData")
-save(country_abbrev,file = "country_abbrev.RData")
-save(country_iso2,file = "country_iso2.RData")
-save(region_run,file = 'region_run.RData')
-save(income_run,file = 'income_run.RData')
-save(country_run,file = 'country_run.RData')
-save(count_region,file = 'count_region.RData')
-save(count_income,file = 'count_income.RData')
+save(region_abbrev,file = "rdata/region_abbrev.RData")
+save(income_abbrev,file = "rdata/income_abbrev.RData")
+save(country_abbrev,file = "rdata/country_abbrev.RData")
+save(country_iso2,file = "rdata/country_iso2.RData")
+save(region_run,file = 'rdata/region_run.RData')
+save(income_run,file = 'rdata/income_run.RData')
+save(country_run,file = 'rdata/country_run.RData')
+save(count_region,file = 'rdata/count_region.RData')
+save(count_income,file = 'rdata/count_income.RData')
 
 #UPDATE EVERY YEAR AS THE INCOME THRESHOLDS CHANGE
 incomerange <- ifelse(income_abbrev == "LIC",paste("\\\\$0 to \\\\$1,045"),
@@ -65,7 +65,7 @@ incomerange <- ifelse(income_abbrev == "LIC",paste("\\\\$0 to \\\\$1,045"),
                  ifelse(income_abbrev == "UMC",paste("\\\\$4,096 to \\\\$12,695"),                             
                         paste("\\\\$12,696 and above"))))
 
-save(incomerange,file = 'incomerange.RData')
+save(incomerange,file = 'rdata/incomerange.RData')
 
 
 #List of breaks for AFR region
@@ -195,7 +195,7 @@ breaks <-
         if(region_run=="Middle East & North Africa"){MENAbreaks}else{
           if(region_run=="South Asia"){SARbreaks}}}}}}
  }
-save(breaks, file = "breaks.RData")
+save(breaks, file = "rdata/breaks.RData")
 
 #Insert a sentence in the doc if the country is FCV
 FCVsentence <- if(country_run %in% FCVhi){ paste0(country_run," is a Fragile, Conflict, or Violence (FCV) impacted country in high-intensity conflict. ")}else{
@@ -203,7 +203,7 @@ FCVsentence <- if(country_run %in% FCVhi){ paste0(country_run," is a Fragile, Co
     if(country_run %in% FCVfrag){paste0(country_run," is a Fragile, Conflict, or Violence (FCV) impacted country with high instituional and social fragility. ")}else{""}
   }}
 
-save(FCVsentence,file = "FCVsentence.RData")
+save(FCVsentence,file = "rdata/FCVsentence.RData")
 
 
 

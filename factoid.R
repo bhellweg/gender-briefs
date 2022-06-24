@@ -262,11 +262,11 @@ fact5 <- if(is.na(fulltable$Rating[40])==F&&fulltable$Rating[40]>0){
 
 fact5
 
-save(file = "fact1.RData",fact1)
-save(file = "fact2.RData",fact2)
-save(file = "fact3.RData",fact3)
-save(file = "fact4.RData",fact4)
-save(file = "fact5.RData",fact5)
+save(file = "rdata/fact1.RData",fact1)
+save(file = "rdata/fact2.RData",fact2)
+save(file = "rdata/fact3.RData",fact3)
+save(file = "rdata/fact4.RData",fact4)
+save(file = "rdata/fact5.RData",fact5)
 
 
 
