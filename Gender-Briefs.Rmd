@@ -62,7 +62,6 @@ load("rdata/wb_table.RData")
 load("rdata/fulltable.RData")
 load("rdata/breaks.RData")
 load("rdata/link.RData")
-load("rdata/FCVsentence.RData")
 load("rdata/HCI.RData")
 load("rdata/country_abbrev.RData")
 load("rdata/country_iso2.RData")
@@ -104,12 +103,11 @@ kbl(booktabs = T,toprule = "",bottomrule = "",
 ```{=tex}
 \begin{minipage}[t][1.7cm][t]{12cm}
 \fontsize{9}{8}\selectfont\raggedright
-This briefing showcases the gender landscape in `r country_run` on key indicators helpful for monitoring gender equality and designing effective policy interventions. Gender equality fosters productivity gains, minimizes losses in wealth, reduces poverty, boosts shared prosperity, and supports green, resilient, and inclusive development. `r FCVsentence`
+This briefing showcases the gender landscape in `r country_run` on key indicators helpful for monitoring gender equality and designing effective policy interventions. Gender equality fosters productivity gains, minimizes losses in wealth, reduces poverty, boosts shared prosperity, and supports green, resilient, and inclusive development.
 
 \includegraphics[width=10pt]{icon/pointer.png} Click the measures below to explore the \underline{\href{https://genderdata.worldbank.org/}{World Bank Gender Data Portal}}.
 \end{minipage}
 \vspace{6pt}
-`r if(nchar(FCVsentence)>1){paste("\\vspace{16pt}")}`
 ```
 ```{r table, include=T, echo = F,warning=F}
 

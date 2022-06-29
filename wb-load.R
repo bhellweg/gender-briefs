@@ -1,13 +1,5 @@
 library(wbstats)
 library(tidyverse)
-library(formattable)
-library(knitr)
-library(sparkline)
-library(htmltools)
-library(ggplot2)
-library(maps)
-library(viridis)
-library(ggstance)
 
 #Load WB Cache of indicators and list of countries
 new_wb_cache <- wb_cache()
@@ -52,4 +44,3 @@ wbdata_long$Country <- gsub("Korea, Rep.","Republic of Korea",as.character(wbdat
 wbdata_long$Country <- gsub("Korea, Dem. People's Rep.","Dem. People's Rep. of Korea",as.character(wbdata_long$Country))
 wbdata_long$Country <- gsub("Venezuela, RB","Bolivarian Republic of Venezuela",as.character(wbdata_long$Country))
 wbdata_long$Country <- gsub("Yemen, Rep.","Republic of Yemen",as.character(wbdata_long$Country))
-

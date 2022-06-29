@@ -1,11 +1,5 @@
 library(wbstats)
 library(tidyverse)
-library(formattable)
-library(knitr)
-library(htmltools)
-library(ggplot2)
-library(viridis)
-library(ggstance)
 library(MASS)
 
 # Functions

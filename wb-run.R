@@ -1,8 +1,16 @@
-library(knitr)
-library(wbstats)
-library(tidyverse)
+#Sets working directory to where file is stored.
+setwd(
+dirname(rstudioapi::getActiveDocumentContext()$path)
+)
 
+#Loads and installs relevant packages
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(knitr, wbstats, tidyverse, ggplot2, MASS)
+
+#Loads relevant data (you only need to do this if the data is not already loaded)
 source('wb-load.R')
+
+#Creates functions for next steps
 source('wb-functions.R')
 
 #Create list of countries receiving briefs, 
@@ -12,7 +20,7 @@ List <- wb_countries %>%
   filter(!lending_type %in% c("Aggregates","Not classified")) %>% 
   dplyr::select(country) %>% as_vector() 
 
-#For loop to create briefs
+#For loop to create briefs 
 for(i in List){
 
 #Set Country name
@@ -25,7 +33,7 @@ source('charts.R')
 
 xfun::Rscript_call(
   rmarkdown::render,
-  list(input = 'Gender-Briefs4.Rmd',
+  list(input = 'Gender-Briefs.Rmd',
        output_file = paste('Briefs/',country_abbrev,
                            "-Gender-Briefs.pdf",
                            sep = ""),

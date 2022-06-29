@@ -1,11 +1,7 @@
 library(wbstats)
 library(tidyverse)
-library(formattable)
-library(knitr)
 library(htmltools)
 library(ggplot2)
-library(viridis)
-library(ggstance)
 
 ## Main Table
 
@@ -61,8 +57,7 @@ library(ggstance)
   }
 
 #Logic to switch out indicators as specified by WB team
-if(region_abbrev %in% c('AFR','EAP','LAC','MNA')&&
-   !country_run %in% FCV){
+if(region_abbrev %in% c('AFR','EAP','LAC','MNA')){
    if((wb_table[wb_table$Indicator=='SE.SEC.CMPT.LO.FE.ZS',6]>=90|is.na(wb_table[wb_table$Indicator=='SE.SEC.CMPT.LO.FE.ZS',6]))&&
    wb_table[wb_table$Indicator=='SE.SEC.CMPT.LO.MA.ZS',6]>=90|is.na(wb_table[wb_table$Indicator=='SE.SEC.CMPT.LO.MA.ZS',6])){
   wb_table[wb_table$Indicator=='SE.SEC.CMPT.LO.FE.ZS',]<-wb_table[wb_table$Indicator=='SE.TER.ENRR.FE',] %>% head(1)
@@ -71,7 +66,6 @@ if(region_abbrev %in% c('AFR','EAP','LAC','MNA')&&
 
 #Logic to switch out indicators as specified by WB team
 if(region_abbrev %in% c('AFR','EAP','LAC','MNA','SAS')&&
-   !country_run %in% FCV&&
    is.na(wb_table[wb_table$Indicator=='SP.UWT.TFRT',6])==T){
   wb_table[wb_table$Indicator=='SP.UWT.TFRT',]<-wb_table[wb_table$Indicator=='SP.DYN.CONM.ZS',]
 }

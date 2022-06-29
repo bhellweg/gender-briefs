@@ -1,11 +1,6 @@
 library(wbstats)
 library(tidyverse)
-library(formattable)
-library(knitr)
-library(htmltools)
 library(ggplot2)
-library(viridis)
-library(ggstance)
 
 #Employment Charts
 
@@ -239,3 +234,4 @@ link1 <- if(!is.null(scorecardlink)){
         '',
         '')}
 save(link1, file = "rdata/link1.RData")
+
