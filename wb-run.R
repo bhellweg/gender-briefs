@@ -5,7 +5,7 @@ dirname(rstudioapi::getActiveDocumentContext()$path)
 
 #Loads and installs relevant packages
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(knitr, wbstats, tidyverse, ggplot2, MASS)
+pacman::p_load(knitr, wbstats, tidyverse, ggplot2, MASS, kableExtra, bookdown, viridis)
 
 #Loads relevant data (you only need to do this if the data is not already loaded)
 source('wb-load.R')
