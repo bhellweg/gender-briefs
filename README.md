@@ -28,6 +28,8 @@ This project can be deployed locally in a few hours on a personal computer. You 
 - It takes a long time to run wb-load.R and occasionally the WB API will time out if your connection is slow. For that reason, I recommend running that file command by command to identify any cases where it is timing out. 
 - KableExtra, the package I used to format the tables, doesn't allow an ampersand in the link. Initially, I wanted to link to the country-specific data for each indicator, but the link contained an ampersand. If there's a clean fix to this--or if the Gender Data Portal edits its links, I've left the function to edit the links in the table commented out.
 
+Be sure to download the full repository before running the code, as images and icons are stored in the folders attached in this repository.
+
 ## API
 Data for this project comes from the World Bank API using the `wbstats` package. It is an open API, so no preauthorization or password is required.
 

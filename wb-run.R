@@ -14,7 +14,7 @@ source('wb-load.R')
 source('wb-functions.R')
 
 #Create list of countries receiving briefs, 
-#filtering out aggs and countries outside WB service
+#filtering out aggs and North America
 
 List <- wb_countries %>% 
   filter(!lending_type %in% c("Aggregates","Not classified")) %>% 
